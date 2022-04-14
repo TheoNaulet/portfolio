@@ -1,0 +1,219 @@
+.App {
+  color: white;
+  background-color: #1F1F1F;
+  z-index: 0;
+  font-size: 20px;
+}
+.me{
+  display: flex;
+  height: 50vw;
+}
+.pic-me img{
+  position: absolute;
+  height: 45vw;
+  border-radius: 0 0 3% 3%;
+  margin-left: 0;
+  z-index: 2;
+}
+.menu{
+  margin-top: 4%;
+  width: 50%;
+}
+.menu ul{
+  display: flex;
+}
+.menu li{
+  list-style: none;
+  margin-left: 13%;
+  z-index: 3;
+}
+.presentation{
+  width: 100%;
+  margin-left: 20%;
+  margin-top: 20%;
+}
+.welcome{
+  font-family: 'Poppins', light;
+  font-size: 2.5rem;
+}
+.theo{
+  width: 30%;
+  font-size: 4.5rem;
+  font-family: 'Poppins', SemiBold;
+}
+.profession{
+  font-family: 'Poppins', light;
+}
+.left-me{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+.name{
+  margin-top: 8%;
+  margin-left: 15%;
+  height: 5%;
+  font-family: 'Alex Brush', cursive;
+}
+.dl-cv{
+  width: 30%;
+  height: 20%;
+  border-radius: 20vw;
+  background: linear-gradient(#15B9B9, #3C1DFF);
+  text-align: center;
+}
+.dl{
+  padding-top: 10%;
+}
+.about{
+  display: flex;
+  height: 45vw;
+}
+.image-about{
+  margin-top: 30%;
+  height: 30vw;
+  border-radius: 1vw;
+  margin-left: 70%;
+}
+.text-about h1{
+  font-size: 6rem;
+  margin-top: 50%;
+}
+.text-about{
+  width: 20%;
+  text-align: justify;
+  margin-left: 30% ;
+}
+.text-about p{
+  font-size: 1.5rem;
+  width: 35vw;
+}
+.skills{
+  height: 45vw;
+}
+.bigtitle{
+  margin-top: 0%;
+  font-family: 'Poppins', semiBold;
+  font-size: 4rem;
+  border-bottom: white 4px solid;
+  width: 20vw;
+}
+.bandeauxp{
+  width: 100%;
+}
+.titre1{
+  margin-left: 7%;
+  width: 20vw;
+  border-top: white solid 2px;
+  font-size: 2rem;
+}
+.title{
+  margin-top: 1%px;
+  font-family: 'Poppins', semiBold;
+}
+.bottom-skills{
+  display: flex;
+  padding-top: 0;
+}
+.my-skills{
+  display: flex;
+  margin: 7%;
+  justify-content: space-between;
+}
+.bottom-skills{
+  justify-content: space-between;
+  align-items: center;
+}
+.language{
+  margin-left: 10vw;
+}
+.jaugeEN{
+  height: 2vh;
+  width: 30vw;
+  border-radius: 10vw;
+  background:linear-gradient(45deg, #3C1DFF, #14C9C9);
+}
+.jaugeFR{
+  height: 2vh;
+  width: 15vw;
+  border-radius: 10vw;
+  background:linear-gradient(45deg, #3C1DFF, #14C9C9);
+}
+.studies{
+  margin-right: 15%;
+  margin-top: 2%;
+
+}
+.ball{
+  height: 5vw;
+  width: 5vw;
+  background:linear-gradient(#15B9B9, #3C1DFF);
+  border-radius: 50vw;
+}
+.study{
+  display: flex;
+  width: 30vw;
+  margin-top: 5%;
+}
+.text-stud{
+  margin-left: 10%;
+}
+.xp{
+  height: 60vw;
+}
+.work{
+  border-radius: 20px;
+  height: 400px;
+  width: 500px;
+}
+#workxp{
+  width: 50vw;
+  margin-top: 10vw;
+  margin-left: 10vw;
+}
+.wrapper { 
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70vw;
+  margin-left: 15%;
+  margin-right: 10%;
+}
+.work{
+  justify-content: space-around;
+  margin: 10px;
+}
+#work1{
+  background-image: url(http://www.spoka.net/wp-content/uploads/2017/08/logo-boulanger-3.png);
+  background-size:cover;
+  background-position: center;
+}
+#work2{
+  background-color: white;
+  background-image: url(https://upload.wikimedia.org/wikipedia/fr/thumb/0/03/Logo_FC_Sète_34.svg/1200px-Logo_FC_Sète_34.svg.png);
+  background-size:30%;
+  background-repeat:no-repeat ;
+  background-position: center;
+}
+#work3{
+  background-color: white;
+  background-image: url(https://rodezaveyronfootball.com/wp-content/uploads/2019/07/TFC-logo.png);
+  background-size:30%;
+  background-repeat:no-repeat ;
+  background-position: center;
+}
+#work4{
+    background-color: white;
+    background-image: url(http://www.loccitanieauquotidien.com/wp-content/uploads/2020/03/sete0000.png);
+    background-size:30%;
+    background-repeat:no-repeat ;
+    background-position: center;
+}
+
+
+/*hover*/
+.dl-cv:hover{
+  cursor: pointer;
+  color: black;
+}
