@@ -1,9 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
-</style>; 
+</style>;
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 </style>;
@@ -27,7 +28,7 @@ function App() {
           </div>
         </div>
           <div className='pic-me'><img src={require("./me.png")}></img></div>
-          <div className='menu'> 
+          <div className='menu'>
               <ul>
                 <li>Home</li>
                 <li>Portfolio</li>
@@ -51,6 +52,13 @@ function App() {
           </div>
           <div className='my-skills'>
             <div className='skills1'>
+              <CircularProgressbarWithChildren value={66}>
+                {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
+                <img style={{ width: 60, marginTop: -5, marginBottom: 10 }} src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png" alt="doge" />
+                <div style={{ fontSize: 12, marginTop: -5 }}>
+                  <strong>66%</strong> dammmn
+                </div>
+              </CircularProgressbarWithChildren>;
               <p className='note'>4.5</p>
               <p>JavaScript</p>
             </div>
@@ -95,7 +103,7 @@ function App() {
                     <p className='year'>2017</p>
                   </div>
               </div>
-            </div>     
+            </div>
           </div>
         </div>
         <div className='xp'>
