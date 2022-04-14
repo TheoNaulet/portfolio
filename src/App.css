@@ -37,7 +37,7 @@
   font-size: 2.5rem;
 }
 .theo{
-  width: 30%;
+  width: 35%;
   font-size: 4.5rem;
   font-family: 'Poppins', SemiBold;
 }
@@ -124,9 +124,14 @@
 .bottom-skills{
   justify-content: space-between;
   align-items: center;
+  height: 20vw;
+}
+.bar{
+  margin-left: 3%;
 }
 .language{
   margin-left: 10vw;
+  height: 20vw;
 }
 .jaugeEN{
   height: 2vh;
@@ -142,8 +147,7 @@
 }
 .studies{
   margin-right: 15%;
-  margin-top: 2%;
-
+  height: 20vw;
 }
 .ball{
   height: 5vw;
@@ -160,6 +164,7 @@
   margin-left: 10%;
 }
 .xp{
+  margin-top: 15vw;
   height: 60vw;
 }
 .work{
@@ -211,9 +216,12 @@
     background-position: center;
 }
 
-
 /*hover*/
 .dl-cv:hover{
   cursor: pointer;
+  background: white;
   color: black;
+}
+.work:hover{
+  filter: blur(10px);
 }

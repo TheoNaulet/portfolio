@@ -51,32 +51,50 @@ function App() {
             <h1 className='title'>My Skills</h1>
           </div>
           <div className='my-skills'>
-            <div className='skills1'>
-              <CircularProgressbarWithChildren value={66}>
+            <div className='bar' id='skills1'>
+              <CircularProgressbarWithChildren value={50}>
                 {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
                 <img style={{ width: 60, marginTop: -5, marginBottom: 10 }} src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png" alt="doge" />
                 <div style={{ fontSize: 12, marginTop: -5 }}>
-                  <strong>66%</strong> dammmn
+                  <strong>50%</strong>
                 </div>
-              </CircularProgressbarWithChildren>;
-              <p className='note'>4.5</p>
-              <p>JavaScript</p>
+              </CircularProgressbarWithChildren>
             </div>
-            <div className='skills2'>
-              <p className='note'>4.5</p>
-              <p>JavaScript</p>
+            <div className='bar' id='skills2'>
+            <CircularProgressbarWithChildren value={80}>
+                {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
+                <img style={{ width: 60, marginTop: -5, marginBottom: 10 }} src="https://cdn-icons-png.flaticon.com/512/1216/1216733.png" alt="doge" />
+                <div style={{ fontSize: 12, marginTop: -5 }}>
+                  <strong>80%</strong>
+                </div>
+              </CircularProgressbarWithChildren>
             </div>
-            <div className='skills3'>
-              <p className='note'>4.5</p>
-              <p>JavaScript</p>
+            <div className='bar' id='skills3'>
+            <CircularProgressbarWithChildren value={70}>
+                {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
+                <img style={{ width: 60, marginTop: -5, marginBottom: 10 }} src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Devicon-css3-plain.svg/2048px-Devicon-css3-plain.svg.png" alt="doge" />
+                <div style={{ fontSize: 12, marginTop: -5 }}>
+                  <strong>70%</strong>
+                </div>
+              </CircularProgressbarWithChildren>
             </div>
-            <div className='skills1'>
-              <p className='note'>4.6</p>
-              <p>JavaScript</p>
+            <div className='bar' id='skills4'>
+            <CircularProgressbarWithChildren value={20}>
+                {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
+                <img style={{ width: 60, marginTop: -5, marginBottom: 10 }} src="https://grafikart.fr/uploads/icons/react.svg" alt="doge" />
+                <div style={{ fontSize: 12, marginTop: -5 }}>
+                  <strong>20%</strong>
+                </div>
+              </CircularProgressbarWithChildren>
             </div>
-            <div className='skills1'>
-              <p className='note'>4.6</p>
-              <p>JavaScript</p>
+            <div className='bar' id='skills5'>
+            <CircularProgressbarWithChildren value={90}>
+                {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
+                <img style={{ width: 60, marginTop: -5, marginBottom: 10 }} src="https://hdf-formation.com/wp-content/uploads/2021/12/adobe-photoshop-logo-freelogovectors.net_.png" alt="doge" />
+                <div style={{ fontSize: 12, marginTop: -5 }}>
+                  <strong>90%</strong>
+                </div>
+              </CircularProgressbarWithChildren>
             </div>
           </div>
           <div className='bottom-skills'>
