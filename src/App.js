@@ -52,7 +52,16 @@ function App() {
           </div>
           <div className='my-skills'>
             <div className='bar' id='skills1'>
-              <CircularProgressbarWithChildren value={50}>
+              <CircularProgressbarWithChildren
+                value={50} 
+                styles={{ 
+                root: {}, 
+                path: {
+                  stroke: `rgb(61, 34, 254)`,
+                },
+              }}
+                >
+
                 {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
                 <img style={{ width: 60, marginTop: -5, marginBottom: 10 }} src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png" alt="doge" />
                 <div style={{ fontSize: 12, marginTop: -5 }}>
@@ -61,7 +70,14 @@ function App() {
               </CircularProgressbarWithChildren>
             </div>
             <div className='bar' id='skills2'>
-            <CircularProgressbarWithChildren value={80}>
+            <CircularProgressbarWithChildren 
+                value={80}
+                styles={{ 
+                  root: {}, 
+                  path: {
+                    stroke: `rgb(61, 34, 254)`,
+                  },
+                }} >
                 {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
                 <img style={{ width: 60, marginTop: -5, marginBottom: 10 }} src="https://cdn-icons-png.flaticon.com/512/1216/1216733.png" alt="doge" />
                 <div style={{ fontSize: 12, marginTop: -5 }}>
@@ -70,7 +86,14 @@ function App() {
               </CircularProgressbarWithChildren>
             </div>
             <div className='bar' id='skills3'>
-            <CircularProgressbarWithChildren value={70}>
+            <CircularProgressbarWithChildren 
+                value={70}
+                styles={{ 
+                  root: {}, 
+                  path: {
+                    stroke: `rgb(61, 34, 254)`,
+                  },
+                }}>
                 {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
                 <img style={{ width: 60, marginTop: -5, marginBottom: 10 }} src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Devicon-css3-plain.svg/2048px-Devicon-css3-plain.svg.png" alt="doge" />
                 <div style={{ fontSize: 12, marginTop: -5 }}>
@@ -79,7 +102,14 @@ function App() {
               </CircularProgressbarWithChildren>
             </div>
             <div className='bar' id='skills4'>
-            <CircularProgressbarWithChildren value={20}>
+            <CircularProgressbarWithChildren 
+                value={20}
+                styles={{ 
+                  root: {}, 
+                  path: {
+                    stroke: `rgb(61, 34, 254)`,
+                  },
+                }}>
                 {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
                 <img style={{ width: 60, marginTop: -5, marginBottom: 10 }} src="https://grafikart.fr/uploads/icons/react.svg" alt="doge" />
                 <div style={{ fontSize: 12, marginTop: -5 }}>
@@ -88,9 +118,16 @@ function App() {
               </CircularProgressbarWithChildren>
             </div>
             <div className='bar' id='skills5'>
-            <CircularProgressbarWithChildren value={90}>
+            <CircularProgressbarWithChildren 
+                  value={90}
+                  styles={{ 
+                    root: {}, 
+                    path: {
+                      stroke: `rgb(61, 34, 254)`,
+                    },
+                  }}>
                 {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
-                <img style={{ width: 60, marginTop: -5, marginBottom: 10 }} src="https://hdf-formation.com/wp-content/uploads/2021/12/adobe-photoshop-logo-freelogovectors.net_.png" alt="doge" />
+                <img style={{ width: 60, marginTop: -5, marginBottom: 10 }} src="https://hdf-formation.com/wp-content/uploads/2021/12/adobe-photoshop-logo-freelogovectors.net_.png" alt="doge"/>
                 <div style={{ fontSize: 12, marginTop: -5 }}>
                   <strong>90%</strong>
                 </div>
@@ -110,14 +147,14 @@ function App() {
               <div className='study'>
                   <div className='ball'></div>
                   <div className='text-stud'>
-                    <p className='place'>Isefac Bachelor</p>
+                    <p className='place'>Bachelor Sport Event</p>
                     <p className='year'>2019 - 2021</p>
                   </div>
               </div>
               <div className='study'>
                   <div className='ball'></div>
                   <div className='text-stud'>
-                    <p className='place'>Lycée Jean Mermoz</p>
+                    <p className='place'>Baccalauréat STI2D</p>
                     <p className='year'>2017</p>
                   </div>
               </div>
@@ -129,11 +166,16 @@ function App() {
           <p className='bigtitle' id='workxp'>My work experience</p>
           </div>
           <div className='wrapper'>
-            <div className='work' id="work1"></div>
+            <div className='work' id="work1">
+              <p>Conseiller de vente multimédia</p>
+            </div>
             <div className='work' id="work2"></div>
             <div className='work' id="work3"></div>
             <div className='work' id="work4" ></div>
           </div>
+        </div>
+        <div className='contact'>
+
         </div>
     </div>
   );
