@@ -1,0 +1,24 @@
+.bottom{
+    margin-top: 5vw;
+    display: flex;
+    height: 10vw;
+    width: 100%;
+    justify-content: center;
+    border-top: 2px solid white;
+  }
+  .contact{
+    width: 30vw;
+    padding-top: 2.5vw;
+    font-size: 1.2vw;
+  }
+  .email{
+    text-decoration: none;
+    color: white;
+  }
+  .linkedin{
+    align-self: center;
+  }
+  .linkedin img{
+    height: 3vw;
+    margin: 1vw;
+  }

@@ -1,0 +1,68 @@
+    h4{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 4vw;
+        width: 100%; 
+        text-align: center; 
+        border-bottom: 1px solid white; 
+        line-height: 0.2em;
+    }
+    h4 span{
+        background:#1F1F1F; 
+        padding:0 10px;
+        margin-right: 60vw;
+    }
+    
+    
+    .portfolio{
+        margin-top: 3vw;
+        height: 30vw;
+        display: inline;
+    }
+    #site-algo{
+        background-image: url(../images/Screen.png);
+        background-size: 27vw;
+        background-position: -1.5vw 1.2vw;
+        background-repeat: no-repeat;
+    }
+    #crud{
+        background-color: white;
+        background-position: -1.5vw 1.2vw;
+        background-repeat: no-repeat;
+    }
+    #wrap-portfolio{
+        display: flex;
+        margin-top: 5vw;
+        justify-content: space-around;
+        padding: 0 10vw 0 10vw;
+    }
+    .project{
+        height: 16vw;
+        width: 24vw;
+    }
+    .top{
+        background-color: #D0D0D0;
+        height: 1.25vw;
+        display: flex;
+    }
+    .point{
+        height: 0.7vw;
+        width: 0.7vw;
+        margin-left: 0.5vw;
+        margin-top: 0.25vw;
+        border-radius: 100%;
+    }
+    #rouge{
+        background-color: red;
+    }
+    #jaune{
+        background-color: orange;
+    }
+    #vert{
+        background-color:  #8DB600;
+    }
+    #desc{
+        position: absolute;
+        color: red;
+        margin-top: 6vw;
+        margin-left: 8vw;
+    }

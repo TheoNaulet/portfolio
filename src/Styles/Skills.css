@@ -1,0 +1,112 @@
+  .my-skills{
+    display: flex;
+    margin: 5vw;
+    justify-content: space-between;
+  }
+  .bottom-skills{
+    justify-content: space-between;
+    align-items: center;
+    height:auto;
+    display: flex;
+  }
+  .bar{
+    margin-left: 3%;
+  }
+  .language{
+    margin-left: 10vw;
+    height: 30vw;
+  }
+  #CircularProgressbarWithChildren{
+    margin-left:1vw; 
+  }
+  .jaugeEN{
+    height: 1vw;
+    width: 20vw;
+    border-radius: 10vw;
+    background:linear-gradient(45deg, #3C1DFF, #14C9C9);
+    margin: 0.5vw 0 1vw 0;
+  }
+  .jaugeFR{
+    height: 1vw;
+    width: 30vw;
+    border-radius: 10vw;
+    background:linear-gradient(45deg, #3C1DFF, #14C9C9);
+    margin: 0.5vw 0 1vw 0;
+  }
+  .jaugeES{
+    height: 1vw;
+    width: 15vw;
+    background: linear-gradient(45deg, #3C1DFF, #14C9C9);;
+    border-radius: 10vw;
+    margin: 0.5vw 0 1vw 0;
+  }
+  .ball{
+    height: 5vw;
+    width: 5vw;
+    background:linear-gradient(#15B9B9, #3C1DFF);
+  }
+  .studies{
+    margin-bottom: 8vw;
+  }
+  .study{
+    display: flex;
+    width: 23vw;
+    align-items: center;
+    margin-right: 10vw;
+
+  }
+  .study p{
+    font-size: 1.1vw;
+  }
+  .text-stud{
+    margin-left: 10%;
+  }
+  .skills{
+    height: 45vw;
+  }
+.langue{
+  font-size: 1.5vw;
+}
+.bigtitle{
+  font-size: 4vw;
+  border-bottom: white 0.2vw solid;
+  padding-bottom: 2% ;
+  margin-bottom: 2%;
+  width: 20vw;
+}
+#afpa{
+  background-image: url(../images/afpa.png);
+  background-size: 4vw;
+  background-repeat: no-repeat;
+  background-position: 0.8vw;
+}
+#isefac{
+  background-image: url(../images/isefac.png);
+  background-size: 2.5vw;
+  background-repeat: no-repeat;
+  background-position: 1vw 0.8vw;
+}
+#bac{
+  background: linear-gradient(#15B9B9, #3C1DFF);
+  background-image: url(../images/casquette-de-graduation-3.png);
+  background-size: 3vw;
+  background-repeat: no-repeat;
+  background-position: 1vw 1vw;
+  
+}
+#level{
+  margin-top: 1vw;
+  font-size: 1vw;
+}
+.logolang{
+  width: 3vw;
+  margin-bottom: 1vw ;
+}
+.percentage{
+  font-size: 1vw;
+}
+.study:hover{
+  background:linear-gradient(45deg, #3C1DFF, #14C9C9);
+  border-radius: 10vw;
+  color: black;
+}
