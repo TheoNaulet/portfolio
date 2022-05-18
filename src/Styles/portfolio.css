@@ -62,7 +62,8 @@
     }
     #desc{
         position: absolute;
-        color: red;
+        color: #3C1DFF;
+        font-size: 2vw;
         margin-top: 6vw;
-        margin-left: 8vw;
+        margin-left: 5vw;
     }
