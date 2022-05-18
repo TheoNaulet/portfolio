@@ -47,6 +47,7 @@
     width: 50%;
 } 
 .dl{
+    
     margin-top: 1vw;
     border-radius: 10vw;
     width: 12vw;
@@ -54,9 +55,14 @@
     text-align: center;
     text-decoration: none;
     font-size: 1.5vw;
+
+    color: white;
+}
+button{
     background:linear-gradient(45deg, #3C1DFF, #14C9C9);
 }
 
-.dl:hover{
+button:hover{
     cursor: pointer;
+    border: 2px solid white ;
 }
