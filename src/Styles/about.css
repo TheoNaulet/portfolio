@@ -29,3 +29,40 @@
     margin-bottom: 2vw;
     font-size: 3vw;
 }
+
+@media only screen and (max-width: 600px) {
+    .acontainer{
+        margin: 30vw 0 0 0vw;
+        height: auto;
+        display: block;
+        justify-content: center;
+    }
+    .blocimage{
+        align-items: center;
+        height: 80vw;
+        width: 70vw;
+        background-size: 80vw;
+        border-radius: 5vw;
+        margin-left: 16vw;
+    
+
+    }
+    .textAbout{
+        height: auto;
+        padding: 0 10vw 0 10vw;
+        margin: 5vw 0 10vw 0;
+        width: auto;
+        justify-content: center;
+        text-align: justify;
+
+    }
+    .aboutbis{
+        font-size: 6vw;
+        width: 50vw;
+    }
+    .text{
+        font-size: 4vw;
+        width: auto;
+        margin-left: 0;
+    }
+}

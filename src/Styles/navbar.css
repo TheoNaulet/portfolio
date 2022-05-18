@@ -20,3 +20,14 @@
 .nav:hover{
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+    .wrap{
+        height: 10vw;
+        font-size: 3vw;
+    }
+    .prenom{
+        width: 20%;
+        margin: 0 25vw 0 1vw;
+    }
+}

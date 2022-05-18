@@ -22,12 +22,12 @@ const Myskills = styled.div`
 const Skills = () => {
     return(
         <Container>
-            <Title1><h4><span>My skills</span></h4></Title1>
+            <h4><span>My skills</span></h4>
             <Myskills>
 <div className='skills'>
         <div className='my-skills'>
             <div className='bar' id='skills1'>
-            <CircularProgressbarWithChildren
+            <CircularProgressbarWithChildren className='progressbar'
                 value={70} 
                 styles={{ 
                 root: {}, 
@@ -45,7 +45,7 @@ const Skills = () => {
             </CircularProgressbarWithChildren>
             </div>
             <div className='bar' id='skills2'>
-            <CircularProgressbarWithChildren 
+            <CircularProgressbarWithChildren className='progressbar'
                 value={80}
                 styles={{ 
                 root: {}, 
@@ -61,7 +61,7 @@ const Skills = () => {
             </CircularProgressbarWithChildren>
             </div>
             <div className='bar' id='skills3'>
-            <CircularProgressbarWithChildren 
+            <CircularProgressbarWithChildren className='progressbar'
                 value={70}
                 styles={{ 
                 root: {}, 
@@ -77,7 +77,7 @@ const Skills = () => {
             </CircularProgressbarWithChildren>
             </div>
             <div className='bar' id='skills4'>
-            <CircularProgressbarWithChildren 
+            <CircularProgressbarWithChildren className='progressbar'
                 value={40}
                 styles={{ 
                 root: {}, 
@@ -93,7 +93,7 @@ const Skills = () => {
             </CircularProgressbarWithChildren>
             </div>
             <div className='bar' id='skills5'>
-            <CircularProgressbarWithChildren 
+            <CircularProgressbarWithChildren className='progressbar'
                 value={90}
                 styles={{ 
                     root: {}, 
@@ -114,13 +114,13 @@ const Skills = () => {
             <p className='bigtitle'>Language</p>
                 <p className="langue">Français</p>
                 <p id="level">Natif</p>
-                <div className='jaugeFR'></div>
+                <div className='jauge' id='jaugeFR'></div>
                 <p className="langue">Anglais</p>
                 <p id="level">Intermediaire</p>
-                <div className='jaugeEN'></div>
+                <div className='jauge' id='jaugeEN'></div>
                 <p className="langue">Espagnol</p>
                 <p id="level">Scolaire</p>
-                <div className='jaugeES'></div>
+                <div className='jauge' id='jaugeES'></div>
             </div>
             <div className='studies'>
             <p className='bigtitle'>Studies</p>

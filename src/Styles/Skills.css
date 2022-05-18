@@ -19,27 +19,28 @@
   #CircularProgressbarWithChildren{
     margin-left:1vw; 
   }
-  .jaugeEN{
+  #jaugeEN{
     height: 1vw;
     width: 20vw;
     border-radius: 10vw;
     background:linear-gradient(45deg, #3C1DFF, #14C9C9);
     margin: 0.5vw 0 1vw 0;
   }
-  .jaugeFR{
+  #jaugeFR{
     height: 1vw;
     width: 30vw;
     border-radius: 10vw;
     background:linear-gradient(45deg, #3C1DFF, #14C9C9);
     margin: 0.5vw 0 1vw 0;
   }
-  .jaugeES{
+  #jaugeES{
     height: 1vw;
     width: 15vw;
     background: linear-gradient(45deg, #3C1DFF, #14C9C9);;
     border-radius: 10vw;
     margin: 0.5vw 0 1vw 0;
   }
+  
   .ball{
     height: 5vw;
     width: 5vw;
@@ -92,7 +93,6 @@
   background-size: 3vw;
   background-repeat: no-repeat;
   background-position: 1vw 1vw;
-  
 }
 #level{
   margin-top: 1vw;
@@ -109,4 +109,99 @@
   background:linear-gradient(45deg, #3C1DFF, #14C9C9);
   border-radius: 10vw;
   color: black;
+}
+
+
+@media only screen and (max-width: 600px) {
+    h4 span{
+      font-size: 8vw;
+    }
+    .skills{
+      height: auto;
+    }
+    .my-skills{
+      display: flex;
+      overflow:scroll;
+      margin:5vw 0 5vw 0;
+      width: 100vw;
+    }
+    .progressbar{
+      height: 60vw;
+      width: 60vw;
+      margin-left: 0;
+      padding: 5vw 5vw 5vw 5vw ;
+      
+    }
+    .logolang{
+      height: 10vw;
+      width: 10vw;
+    }
+    .percentage{
+      font-size: 3vw;
+    }
+    .bottom-skills{
+      display: block;
+    }
+    .language{
+      height: auto;
+      margin: 10vw 0 10vw 11vw;
+    }
+    .bigtitle{
+      font-size: 8vw;
+    }
+    .langue{
+      font-size: 4vw;
+    }
+    #level{
+      font-size: 3vw;
+    }
+    #jaugeFR{
+      height: 4vw;
+      width: 80vw;
+      margin-top: 3vw;
+      margin-bottom: 3vw;
+    }
+    #jaugeEN{
+      height: 4vw;
+      width: 55vw;
+      margin-top: 3vw;
+      margin-bottom: 3vw;
+    }
+    #jaugeES{
+      height: 4vw;
+      width: 45vw;
+      margin-top: 3vw;
+      margin-bottom: 3vw;
+    }
+    .studies{
+      height: auto;
+      margin: 10vw 0 10vw 11vw;
+    }
+    .study{
+      width: 80vw;
+      height: 20vw;
+      margin-top: 4vw;
+    }
+    .text-stud{
+      margin-left: 0;
+    }
+    .text-stud p{
+      font-size: 4.5vw;
+    }
+    .ball{
+      height: 30vw;
+      width: 30vw;
+    }
+    #isefac{
+      background-size: 12vw;
+      background-position: 5vw 6.5vw;
+    }
+    #afpa{
+      background-size: 12vw;
+      background-position: 5vw 12vw;
+    }
+    #bac{
+      background-size: 12vw;
+      background-position: 5vw 9vw;
+    }
 }

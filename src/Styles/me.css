@@ -13,13 +13,13 @@
 }
 .me{
     display: flex;
-    height: 50vw;
+    height: 50vw;   
 }
 .pic-me img{
     position: absolute;
     height: 45vw;
     border-radius: 0 0 3% 3%;
-    margin-left: 0;
+    
     z-index: 2;
     background-image: url(../images/me.png);
 }
@@ -33,7 +33,7 @@
     font-size: 2.5vw;
 } 
 .theo{
-    width: 35%;
+    width: 100%;
     font-size: 4.5vw;
 } 
 .profession{
@@ -47,7 +47,6 @@
     width: 50%;
 } 
 .dl{
-    
     margin-top: 1vw;
     border-radius: 10vw;
     width: 12vw;
@@ -65,4 +64,51 @@ button{
 button:hover{
     cursor: pointer;
     border: 2px solid white ;
+}
+
+@media only screen and (max-width: 600px) {
+    .me{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 0; 
+        height: auto;
+
+    }
+    .pic-me img{
+        position: relative; 
+        margin-left: 12vw;
+        height: 120vw;
+        border-radius: 0 0 3% 3%;
+        z-index: 2;
+        background-image: url(../images/me.png);
+
+    }
+    .left-me{
+        width: 100%;
+        height: 10vw;
+        margin-bottom: 20vw;
+        margin-left: 0;
+    }
+    .presentation{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .welcome{
+        font-size: 8vw;
+    }
+    .theo{
+        font-size: 10vw
+    }
+    .profession{
+        font-size: 5vw;;
+    }
+    .dl{
+        width: 40vw;
+        height: 10vw;
+        font-size: 5vw;
+    }
+    .presentation p,h1{
+        margin-bottom: 3vw;
+    }
 }
