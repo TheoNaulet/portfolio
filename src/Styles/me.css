@@ -24,7 +24,7 @@
     background-image: url(../images/me.png);
 }
 .presentation{
-    width: 70vw;
+    width: auto;
     margin-left: 30%;
     margin-top: 30%;
 }
@@ -59,6 +59,7 @@
 }
 button{
     background:linear-gradient(45deg, #3C1DFF, #14C9C9);
+    border: none;
 }
 
 button:hover{

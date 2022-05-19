@@ -23,11 +23,11 @@
 
 @media only screen and (max-width: 600px) {
     .wrap{
-        height: 10vw;
-        font-size: 3vw;
+        height: 15vw;
+        font-size: 4vw;
     }
     .prenom{
-        width: 20%;
-        margin: 0 25vw 0 1vw;
+        width: 50%;
+        margin: 0 10vw 0 3vw;
     }
 }

@@ -114,7 +114,9 @@
 
 @media only screen and (max-width: 600px) {
     h4 span{
-      font-size: 8vw;
+      height: auto;
+      margin-left: 4vw;
+      font-size: 7vw;
     }
     .skills{
       height: auto;
