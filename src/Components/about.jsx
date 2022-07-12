@@ -1,12 +1,11 @@
 import React from "react";
-import styled from "styled-components";
 import "../Styles/about.css"
 
 const About = () => {
     return(
         <div className="acontainer">
             <div className="blocimage">
-
+                
             </div>
             <div className="textAbout">
             <div className="aboutbis">A propos de moi</div>

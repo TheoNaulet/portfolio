@@ -22,12 +22,12 @@ const Myskills = styled.div`
 const Skills = () => {
     return(
         <Container>
-            <Title1><h4><span>Skills</span></h4></Title1>
+            <h4><span>Skills</span></h4>
             <Myskills>
 <div className='skills'>
         <div className='my-skills'>
             <div className='bar' id='skills1'>
-            <CircularProgressbarWithChildren
+            <CircularProgressbarWithChildren className='progressbar'
                 value={70} 
                 styles={{ 
                 root: {}, 
@@ -45,7 +45,7 @@ const Skills = () => {
             </CircularProgressbarWithChildren>
             </div>
             <div className='bar' id='skills2'>
-            <CircularProgressbarWithChildren 
+            <CircularProgressbarWithChildren className='progressbar'
                 value={80}
                 styles={{ 
                 root: {}, 
@@ -61,8 +61,8 @@ const Skills = () => {
             </CircularProgressbarWithChildren>
             </div>
             <div className='bar' id='skills3'>
-            <CircularProgressbarWithChildren 
-                value={70}
+            <CircularProgressbarWithChildren className='progressbar'
+                value={80}
                 styles={{ 
                 root: {}, 
                 path: {
@@ -72,13 +72,13 @@ const Skills = () => {
                 {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
                 <img className="logolang" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Devicon-css3-plain.svg/2048px-Devicon-css3-plain.svg.png" alt="doge" />
                 <div className="percentage">
-                <strong>70%</strong>
+                <strong>80%</strong>
                 </div>
             </CircularProgressbarWithChildren>
             </div>
             <div className='bar' id='skills4'>
-            <CircularProgressbarWithChildren 
-                value={40}
+            <CircularProgressbarWithChildren className='progressbar'
+                value={70}
                 styles={{ 
                 root: {}, 
                 path: {
@@ -88,12 +88,44 @@ const Skills = () => {
                 {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
                 <img className="logolang" src="https://grafikart.fr/uploads/icons/react.svg" alt="doge" />
                 <div className="percentage">
-                <strong>40%</strong>
+                <strong>70%</strong>
                 </div>
             </CircularProgressbarWithChildren>
             </div>
             <div className='bar' id='skills5'>
-            <CircularProgressbarWithChildren 
+            <CircularProgressbarWithChildren className='progressbar'
+                value={80}
+                styles={{ 
+                    root: {}, 
+                    path: {
+                    stroke: `rgb(21, 198, 203)`,
+                    },
+                }}>
+                {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
+                <img className="logolang" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png" alt="doge"/>
+                <div className="percentage">
+                <strong>80%</strong>
+                </div>
+            </CircularProgressbarWithChildren>
+            </div>
+            <div className='bar' id='skills6'>
+            <CircularProgressbarWithChildren className='progressbar'
+                value={60}
+                styles={{ 
+                    root: {}, 
+                    path: {
+                    stroke: `rgb(21, 198, 203)`,
+                    },
+                }}>
+                {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
+                <img className="logolang" src="https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg" alt="doge"/>
+                <div className="percentage">
+                <strong>60%</strong>
+                </div>
+            </CircularProgressbarWithChildren>
+            </div>
+            <div className='bar' id='skills7'>
+            <CircularProgressbarWithChildren className='progressbar'
                 value={90}
                 styles={{ 
                     root: {}, 
@@ -114,13 +146,13 @@ const Skills = () => {
             <p className='bigtitle'>Language</p>
                 <p className="langue">Français</p>
                 <p id="level">Natif</p>
-                <div className='jaugeFR'></div>
+                <div className='jauge' id='jaugeFR'></div>
                 <p className="langue">Anglais</p>
                 <p id="level">Intermediaire</p>
-                <div className='jaugeEN'></div>
+                <div className='jauge' id='jaugeEN'></div>
                 <p className="langue">Espagnol</p>
                 <p id="level">Scolaire</p>
-                <div className='jaugeES'></div>
+                <div className='jauge' id='jaugeES'></div>
             </div>
             <div className='studies'>
             <p className='bigtitle'>Studies</p>

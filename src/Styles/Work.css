@@ -99,3 +99,36 @@
         margin-right: 40vw;
         justify-content: flex-start;
     }
+
+    @media only screen and (max-width: 600px) {
+        .xp{
+            height: 115vw;
+        }
+        h2{
+            font-size: 5vw;
+        }
+        .wrapper{
+            margin: 0;
+        }
+        .wrapper .box{
+            margin: 10vw 5vw 0 5vw;
+            height: 40vw;
+            width: 40vw;
+        }
+        .imgBox img{
+            height: 40vw;
+            width: 40vw;
+        }
+        .content{
+            height: 40vw;
+            width: 40vw;
+            line-height: 3vw;
+        }
+        .content h2{
+            font-size: 3vw;
+            line-height: 2.5vw;
+        }
+        .content span{
+            font-size: 2.5vw;
+        }
+    }

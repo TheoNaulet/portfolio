@@ -8,8 +8,8 @@
   }
   .contact{
     width: 30vw;
-    padding-top: 2.5vw;
     font-size: 1.2vw;
+    align-self: center;
   }
   .email{
     text-decoration: none;
@@ -21,4 +21,17 @@
   .linkedin img{
     height: 3vw;
     margin: 1vw;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .bottom{
+      height: 20vw;
+    }
+    .contact{
+      font-size: 2.5vw;
+      margin-right: 25vw;
+    }
+    .linkedin img{
+      height: 8vw;
+    } 
   }

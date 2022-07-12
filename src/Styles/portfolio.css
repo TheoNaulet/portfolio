@@ -62,7 +62,35 @@
     }
     #desc{
         position: absolute;
-        color: red;
+        color: #3C1DFF;
+        font-size: 2vw;
         margin-top: 6vw;
-        margin-left: 8vw;
+        margin-left: 5vw;
     }
+
+    @media only screen and (max-width: 600px) {
+        .portfolio{
+            height: auto;;
+        }
+        #wrap-portfolio{
+            height: 100vw;
+            display: block;
+        }
+        .project{
+            width: 80vw;
+            height: 50vw;
+        }
+        #site-algo{
+            background-size: 85vw;
+            background-position: -2.5vw 4vw;
+        }
+        .top{
+            height: 4vw;
+        }
+        .point{
+            height: 3vw;
+            width: 3vw;
+            margin-left: 1.5vw;
+            margin-top: 0.5vw;
+        }
+    }  
