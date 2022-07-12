@@ -6,7 +6,7 @@ const Work = () => {
     return(
     <div className='xp'>
         <div className='bandeauxp'>
-            <h2><span>My work experience</span></h2>
+            <h2><span>Experiences</span></h2>
         </div>
         <div className='wrapper'>
             <div className="box">

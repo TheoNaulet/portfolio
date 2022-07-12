@@ -8,7 +8,6 @@ import Work from './Components/Work';
 import Portfolio from './Components/portfolio';
 import Bottom from './Components/bottom';
 
-
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 </style>;

@@ -22,7 +22,7 @@ const Myskills = styled.div`
 const Skills = () => {
     return(
         <Container>
-            <Title1><h4><span>My skills</span></h4></Title1>
+            <Title1><h4><span>Skills</span></h4></Title1>
             <Myskills>
 <div className='skills'>
         <div className='my-skills'>
