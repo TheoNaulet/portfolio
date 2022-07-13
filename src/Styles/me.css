@@ -108,6 +108,7 @@ button:hover{
         width: 40vw;
         height: 10vw;
         font-size: 5vw;
+        margin-bottom: 2vw;
     }
     .presentation p,h1{
         margin-bottom: 3vw;

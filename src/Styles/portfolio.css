@@ -73,7 +73,7 @@
             height: auto;;
         }
         #wrap-portfolio{
-            height: 100vw;
+            height: auto;
             display: block;
         }
         .project{
