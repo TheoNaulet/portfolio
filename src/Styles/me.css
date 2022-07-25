@@ -73,6 +73,7 @@ button:hover{
         flex-direction: column-reverse;
         margin-top: 0; 
         height: auto;
+        margin-bottom: 2vw;
 
     }
     .pic-me img{
@@ -87,7 +88,7 @@ button:hover{
     .left-me{
         width: 100%;
         height: 10vw;
-        margin-bottom: 20vw;
+        margin-bottom: 30vw;
         margin-left: 0;
     }
     .presentation{
