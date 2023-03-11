@@ -114,7 +114,7 @@
 .study:hover{
   background:linear-gradient(45deg, #3C1DFF, #14C9C9);
   border-radius: 10vw;
-  color: black;
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
@@ -204,6 +204,10 @@
       background-position: 5vw 6.5vw;
     }
     #afpa{
+      background-size: 12vw;
+      background-position: 5vw 12vw;
+    }
+    #Oclock{
       background-size: 12vw;
       background-position: 5vw 12vw;
     }

@@ -129,7 +129,8 @@
             line-height: 3vw;
         }
         .content h2{
-            font-size: 3vw;
+            padding: 5px;
+            font-size: 10px;
             line-height: 2.5vw;
         }
         .content span{
