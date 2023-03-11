@@ -81,6 +81,12 @@
   background-repeat: no-repeat;
   background-position: 0.8vw;
 }
+#Oclock{
+  background-image: url(../images/oclock.png);
+  background-size: 4vw;
+  background-repeat: no-repeat;
+  background-position: 0.8vw;
+}
 #isefac{
   background-image: url(../images/isefac.png);
   background-size: 2.5vw;

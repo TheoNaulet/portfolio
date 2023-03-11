@@ -11,8 +11,6 @@
         padding:0 10px;
         margin-right: 60vw;
     }
-    
-    
     .portfolio{
         margin-top: 3vw;
         height: auto;
@@ -38,6 +36,7 @@
     .project{
         height: 16vw;
         width: 24vw;
+        margin-bottom: 50px;
     }
     a{
         text-decoration: none;

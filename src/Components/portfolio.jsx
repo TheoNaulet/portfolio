@@ -25,7 +25,7 @@ const Portfolio = () => {
                         <div className="point" id='rouge'></div>
                         <div className="point" id='jaune'></div>
                         <div className="point" id='vert'></div>
-                        <p className='label_site'>Automatisation données Open Street Map</p>
+                        <p className='label_site'>Automatisation import données Open Street Map</p>
                     </div>
                     <img className='viatransitImage' src={osm}/>
                 </div>

@@ -15,9 +15,9 @@ const Me = () => {
                 <div className='presentation'>
                     <p className='welcome'>BIENVENUE</p>
                     <h1 className='theo'>Je suis Théo Naulet</h1>
-                    <p className='profession'>Étudiant en web-developpement</p>
+                    <p className='profession'>Développeur web</p>
                     <a id='dl-cv' href='https://drive.google.com/file/d/1ze9NX6-TtUREAW6e1Gq7d9R99IHZfh0M/view?usp=sharing' target='blank'>
-                        <button className='dl' >Download CV</button>
+                        <button className='dl'>Download CV</button>
                     </a>
                 </div>
             </div>
