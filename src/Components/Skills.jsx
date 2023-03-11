@@ -78,7 +78,7 @@ const Skills = () => {
             </div>
             <div className='bar' id='skills4'>
             <CircularProgressbarWithChildren className='progressbar'
-                value={70}
+                value={50}
                 styles={{ 
                 root: {}, 
                 path: {
@@ -88,7 +88,7 @@ const Skills = () => {
                 {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
                 <img className="logolang" src="https://grafikart.fr/uploads/icons/react.svg" alt="doge" />
                 <div className="percentage">
-                <strong>70%</strong>
+                <strong>50%</strong>
                 </div>
             </CircularProgressbarWithChildren>
             </div>
@@ -134,7 +134,7 @@ const Skills = () => {
                     },
                 }}>
                 {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
-                <img className="logolang" src="https://hdf-formation.com/wp-content/uploads/2021/12/adobe-photoshop-logo-freelogovectors.net_.png" alt="doge"/>
+                <img className="logolang" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="doge"/>
                 <div className="percentage">
                 <strong>90%</strong>
                 </div>
@@ -155,7 +155,7 @@ const Skills = () => {
                 <div className='jauge' id='jaugeES'></div>
             </div>
             <div className='studies'>
-            <p className='bigtitle'>Studies</p>
+            <p className='bigtitle'>Éducation</p>
             <div className='study'>
                 <div className='ball' id='afpa' ></div>
                 <div className='text-stud' >

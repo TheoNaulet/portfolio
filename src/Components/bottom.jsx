@@ -1,5 +1,6 @@
 import React from "react";
 import github from '../images/logo-github.png';
+import linkedin from '../images/linkedin.png'
 import '../Styles/bottom.css'
 
 const Bottom = () => {
@@ -12,7 +13,7 @@ const Bottom = () => {
                 </div>
                 <div className='linkedin'>
                 <a className='linkedinlogo' target="_blank" href='https://www.linkedin.com/in/theo-naulet/'>
-                    <img src='https://pnggrid.com/wp-content/uploads/2021/05/linkedin-logo-white-1024x1024.png'></img>
+                    <img src={linkedin}></img>
                 </a>
                 <a href='https://github.com/TheoNaulet' target="_blank">
                     <img src={github} ></img>

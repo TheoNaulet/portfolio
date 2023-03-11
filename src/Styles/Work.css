@@ -1,5 +1,5 @@
     .xp{
-    height: 65vw;
+    height: auto;
     }
     .work{
     border-radius: 2vw;
@@ -80,6 +80,7 @@
     resize: both;
     border-radius: 10%;
     border: 0.3vw solid white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
     .bandeauxp{
         margin-top: 5vw;
@@ -102,7 +103,8 @@
 
     @media only screen and (max-width: 600px) {
         .xp{
-            height: 115vw;
+            height: auto;
+            margin-bottom: 100px;
         }
         h2{
             font-size: 5vw;

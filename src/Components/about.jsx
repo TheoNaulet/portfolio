@@ -9,7 +9,7 @@ const About = () => {
             </div>
             <div className="textAbout">
             <div className="aboutbis">A propos de moi</div>
-            <div className="text">Initialement de formation commerciale, j'ai dû pour des raisons de santé, entamer une reconversion professionnelle. C'est dans le développement Web que je m'épanouis désormais. Je suis d'ailleurs à la recherche d'un stage d'une durée de 2 mois en tant que Développeur Junior en React JS. Pour plus de renseignements, n'hésitez pas à me contacter ! <br /> <br /> Ma plus grande qualité est la curiosité et je suis déjà curieux de discuter de nos futurs projets.  </div>
+            <div className="text">Initialement de formation commerciale, j'ai dû pour des raisons de santé, entamer une reconversion professionnelle. C'est dans le développement Web que je m'épanouis désormais. Je suis d'ailleurs à la recherche d'un stage d'une durée de 2 mois en tant que Développeur Junior Full-stack, du 17 octobre au 23 décembre. Pour plus de renseignements, n'hésitez pas à me contacter ! <br /> <br /> Ma plus grande qualité est la curiosité et je suis déjà curieux de discuter de nos futurs projets.  </div>
             </div>
         </div>
     )

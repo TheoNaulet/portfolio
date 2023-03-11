@@ -15,7 +15,7 @@
     
     .portfolio{
         margin-top: 3vw;
-        height: 30vw;
+        height: auto;
         display: inline;
     }
     #site-algo{
@@ -38,6 +38,19 @@
     .project{
         height: 16vw;
         width: 24vw;
+    }
+    a{
+        text-decoration: none;
+    }
+    .label_site{
+        color: black;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    .viatransitImage{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
     }
     .top{
         background-color: #D0D0D0;
