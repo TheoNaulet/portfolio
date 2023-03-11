@@ -46,7 +46,7 @@ const Skills = () => {
             </div>
             <div className='bar' id='skills2'>
             <CircularProgressbarWithChildren className='progressbar'
-                value={80}
+                value={75}
                 styles={{ 
                 root: {}, 
                 path: {
@@ -54,31 +54,15 @@ const Skills = () => {
                 },
                 }} >
                 {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
-                <img className="logolang" src="https://cdn-icons-png.flaticon.com/512/1216/1216733.png" alt="doge" />
+                <img className="logolang" src="https://icon-library.com/images/node-js-icon/node-js-icon-8.jpg" alt="doge" />
                 <div className="percentage">
-                <strong>80%</strong>
-                </div>
-            </CircularProgressbarWithChildren>
-            </div>
-            <div className='bar' id='skills3'>
-            <CircularProgressbarWithChildren className='progressbar'
-                value={80}
-                styles={{ 
-                root: {}, 
-                path: {
-                    stroke: `rgb(21, 198, 203)`,
-                },
-                }}>
-                {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
-                <img className="logolang" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Devicon-css3-plain.svg/2048px-Devicon-css3-plain.svg.png" alt="doge" />
-                <div className="percentage">
-                <strong>80%</strong>
+                <strong>75%</strong>
                 </div>
             </CircularProgressbarWithChildren>
             </div>
             <div className='bar' id='skills4'>
             <CircularProgressbarWithChildren className='progressbar'
-                value={50}
+                value={75}
                 styles={{ 
                 root: {}, 
                 path: {
@@ -88,7 +72,7 @@ const Skills = () => {
                 {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
                 <img className="logolang" src="https://grafikart.fr/uploads/icons/react.svg" alt="doge" />
                 <div className="percentage">
-                <strong>50%</strong>
+                <strong>75%</strong>
                 </div>
             </CircularProgressbarWithChildren>
             </div>
@@ -137,6 +121,22 @@ const Skills = () => {
                 <img className="logolang" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="doge"/>
                 <div className="percentage">
                 <strong>90%</strong>
+                </div>
+            </CircularProgressbarWithChildren>
+            </div>
+            <div className='bar' id='skills3'>
+            <CircularProgressbarWithChildren className='progressbar'
+                value={80}
+                styles={{ 
+                root: {}, 
+                path: {
+                    stroke: `rgb(21, 198, 203)`,
+                },
+                }}>
+                {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
+                <img className="logolang" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Devicon-css3-plain.svg/2048px-Devicon-css3-plain.svg.png" alt="doge" />
+                <div className="percentage">
+                <strong>80%</strong>
                 </div>
             </CircularProgressbarWithChildren>
             </div>
