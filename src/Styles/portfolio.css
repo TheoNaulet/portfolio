@@ -37,6 +37,26 @@
         height: 16vw;
         width: 24vw;
         margin-bottom: 50px;
+        position: relative;
+    }
+    .project .technos {
+        display: none;
+    }
+    .project .vitrine:hover .viatransitImage{
+        filter: brightness(0.2);
+    }
+    .project .vitrine:hover + .technos {
+        display: block;
+    }
+    .technos{
+        position: absolute;
+        top:20px;
+        left: 20px;
+        list-style-type: none;
+        color: white;
+    }
+    .technos ul{
+        list-style-type: none;
     }
     a{
         text-decoration: none;

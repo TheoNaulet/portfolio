@@ -28,7 +28,7 @@ const Skills = () => {
         <div className='my-skills'>
             <div className='bar' id='skills1'>
             <CircularProgressbarWithChildren className='progressbar'
-                value={70} 
+                value={75} 
                 styles={{ 
                 root: {}, 
                 path: {
@@ -40,7 +40,7 @@ const Skills = () => {
                 {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
                 <img className="logolang" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png" alt="doge" />
                 <div className="percentage">
-                <strong>70%</strong>
+                <strong>75%</strong>
                 </div>
             </CircularProgressbarWithChildren>
             </div>
