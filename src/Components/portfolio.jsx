@@ -22,11 +22,11 @@ const Portfolio = () => {
                         </div>
                         <div class="technos">
                             <ul>
-                                <li>- Next.js</li>
-                                <li>- Strapi</li>
-                                <li>- API Rest</li>
-                                <li>- POSTMAN</li>
-                                <li>- CSS</li>
+                                <li>Next.js</li>
+                                <li>Strapi</li>
+                                <li>API Rest</li>
+                                <li>POSTMAN</li>
+                                <li>CSS</li>
                             </ul>
                         </div>
                     </div>
@@ -43,18 +43,17 @@ const Portfolio = () => {
                     </div>
                     <div class="technos">
                             <ul>
-                                <li>- Node.js</li>
-                                <li>- MongoDB</li>
-                                <li>- API Overpass</li>
-                                <li>- POSTMAN</li>
-                                <li>- API Rest</li>
-                                <li>- geoJSON</li>
-                                <li>- Mapbox</li>
+                                <li>Node.js</li>
+                                <li>MongoDB</li>
+                                <li>API Overpass</li>
+                                <li>POSTMAN</li>
+                                <li>API Rest</li>
+                                <li>geoJSON</li>
+                                <li>Mapbox</li>
                             </ul>
                         </div>
                 </div>
             </div>
-            
         </div>
     )
 }
