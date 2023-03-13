@@ -42,7 +42,7 @@
     .project .technos {
         display: none;
     }
-    .project .vitrine:hover .viatransitImage{
+    .project:hover .viatransitImage{
         filter: brightness(0.2);
     }
     .project .vitrine:hover + .technos {
