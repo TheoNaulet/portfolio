@@ -50,6 +50,7 @@
     margin-bottom: 8vw;
   }
   .study{
+    cursor: pointer;
     display: flex;
     width: 23vw;
     align-items: center;
