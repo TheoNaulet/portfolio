@@ -13,13 +13,13 @@ const Portfolio = () => {
             <div id='wrap-portfolio'>
             <a target='_blank' href='https://youtu.be/MAkjxgxle5Y'>
                     <div className='project' id='crud'>
-                        <div className='vitrine'>
-                        <div className='top'>
-                            <div className="point" id='rouge'></div>
-                            <div className="point" id='jaune'></div>
-                            <div className="point" id='vert'></div>
-                            <p className='label_site'>Mercurious - Projet Personnel</p>
-                        </div>
+                        <div className='mercurious'>
+                            <div className='top'>
+                                <div className="point" id='rouge'></div>
+                                <div className="point" id='jaune'></div>
+                                <div className="point" id='vert'></div>
+                                <p className='label_site'>Mercurious - Projet Personnel</p>
+                            </div>
                         <img className='mercuriousImage' src={mercurious}/>
                         </div>
                         <div class="technos">
