@@ -26,7 +26,7 @@ const Portfolio = () => {
                             <ul>
                                 <li>React.js</li>
                                 <li>Node.js</li>
-                                <li>Mongoose</li>
+                                <li>MongoDB</li>
                                 <li>Firebase</li>
                                 <li>CSS</li>
                                 <li>API Google Maps</li>
