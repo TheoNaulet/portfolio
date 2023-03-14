@@ -34,7 +34,7 @@
         padding: 0 10vw 0 10vw;
     }
     .project{
-        height: 16vw;
+        height: auto;
         width: 24vw;
         margin-bottom: 50px;
         position: relative;
@@ -43,6 +43,10 @@
         display: none;
     }
     .project:hover .viatransitImage{
+        filter: brightness(0.2);
+    }
+    
+    .project:hover .mercuriousImage{
         filter: brightness(0.2);
     }
     .project .vitrine:hover + .technos {
@@ -81,6 +85,12 @@
         height: 100%;
         width: 100%;
     }
+    .mercuriousImage{
+        object-fit: contain;
+        height: auto;
+        width: 100%;
+    }
+    
     .top{
         background-color: #D0D0D0;
         height: 1.25vw;
