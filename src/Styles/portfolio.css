@@ -60,6 +60,7 @@
     }
     .technos{
         position: absolute;
+        pointer-events: none;
         top:20px;
         left: 20px;
         list-style-type: none;
