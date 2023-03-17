@@ -11,7 +11,7 @@ const Portfolio = () => {
         <div className="portfolio">
             <h2><span>Portfolio</span></h2>
             <div id='wrap-portfolio'>
-            <a target='_blank' href='https://youtu.be/MAkjxgxle5Y'>
+            <a target='_blank' href='https://www.mercurious.fr'>
                     <div className='project' id='crud'>
                         <div className='mercurious'>
                             <div className='top'>
