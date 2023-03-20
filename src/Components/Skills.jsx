@@ -156,13 +156,13 @@ const Skills = () => {
             </div>
             <div className='studies'>
             <p className='bigtitle'>Éducation</p>
-            <div className='study'>
+            {/* <div className='study'>
                 <div className='ball' id="Oclock" ></div>
                 <div className='text-stud'>
                     <p className='place'>Formation CDA</p>
                     <p className='year'>Avr. 2023 - Août 2024</p>
                 </div>
-            </div>
+            </div> */}
             <div className='study'>
                 <div className='ball' id='afpa' ></div>
                 <div className='text-stud' >
