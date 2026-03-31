@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { motion } from "framer-motion";
 import { projects } from "@/lib/data";
 import { fadeInUp, staggerContainer, scaleIn } from "@/lib/animation";
+import { assetPath } from "@/lib/asset-path";
 import IPhoneMockup from "@/components/ui/IPhoneMockup";
 import MacBookMockup from "@/components/ui/MacBookMockup";
 
@@ -146,7 +147,7 @@ export default function ProjectPage({
                       <div className="absolute right-0 top-4 w-[180px] md:w-[210px] rotate-[6deg] opacity-75 z-[1]">
                         <div className="bg-[#1a1a1c] rounded-[32px] p-[4px] border border-black/10 shadow-[0_20px_60px_rgba(0,0,0,0.1)]">
                           <div className="rounded-[28px] overflow-hidden">
-                            <img src={iphoneScreens[1].image} alt={iphoneScreens[1].label} className="w-full h-auto" />
+                            <img src={assetPath(iphoneScreens[1].image!)} alt={iphoneScreens[1].label} className="w-full h-auto" />
                           </div>
                         </div>
                       </div>
@@ -154,7 +155,7 @@ export default function ProjectPage({
                         <div className="bg-[#1a1a1c] rounded-[32px] p-[4px] border border-black/10 shadow-[0_30px_80px_rgba(0,0,0,0.15)]">
                           <div className="absolute top-[10px] left-1/2 -translate-x-1/2 w-[50px] h-[16px] bg-black rounded-full z-10" />
                           <div className="rounded-[28px] overflow-hidden">
-                            <img src={iphoneScreens[0].image} alt={iphoneScreens[0].label} className="w-full h-auto" />
+                            <img src={assetPath(iphoneScreens[0].image!)} alt={iphoneScreens[0].label} className="w-full h-auto" />
                           </div>
                         </div>
                       </div>
@@ -167,7 +168,7 @@ export default function ProjectPage({
                       <div className="bg-[#1a1a1c] rounded-[36px] p-[5px] border border-black/10 shadow-[0_30px_80px_rgba(0,0,0,0.12)]">
                         <div className="absolute top-[12px] left-1/2 -translate-x-1/2 w-[60px] h-[18px] bg-black rounded-full z-10" />
                         <div className="rounded-[31px] overflow-hidden">
-                          <img src={iphoneScreens[0].image} alt={iphoneScreens[0].label} className="w-full h-auto" />
+                          <img src={assetPath(iphoneScreens[0].image!)} alt={iphoneScreens[0].label} className="w-full h-auto" />
                         </div>
                       </div>
                     </div>
@@ -178,7 +179,7 @@ export default function ProjectPage({
                     <div className="relative w-[320px] md:w-[400px] flex-shrink-0">
                       <div className="bg-[#2a2a2e] rounded-t-[10px] p-[6px] border border-black/8 border-b-0">
                         <div className="rounded-[4px] overflow-hidden">
-                          <img src={macbookScreens[0].image} alt={macbookScreens[0].label} className="w-full h-auto" />
+                          <img src={assetPath(macbookScreens[0].image!)} alt={macbookScreens[0].label} className="w-full h-auto" />
                         </div>
                       </div>
                       <div className="h-[8px] bg-gradient-to-b from-[#333338] to-[#1e1e22] rounded-b-[4px]" />
@@ -189,7 +190,7 @@ export default function ProjectPage({
                 if (project.image) {
                   return (
                     <div className="relative w-[160px] md:w-[200px] flex-shrink-0">
-                      <img src={project.image} alt={project.name} className="w-full h-auto object-contain drop-shadow-lg" />
+                      <img src={assetPath(project.image!)} alt={project.name} className="w-full h-auto object-contain drop-shadow-lg" />
                     </div>
                   );
                 }

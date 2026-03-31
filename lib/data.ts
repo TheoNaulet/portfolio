@@ -105,7 +105,7 @@ export const projects: Project[] = [
       "Conformité HDS et chiffrement bout en bout",
     ],
     screens: [
-      { type: "iphone", label: "Accueil", gradient: "from-[#A78BFA] to-[#C084FC]" },
+      { type: "iphone", label: "Accueil", gradient: "from-[#A78BFA] to-[#C084FC]", image: "/images/sceen_socare.webp" },
       { type: "iphone", label: "Messagerie", gradient: "from-[#C084FC] to-[#A78BFA]" },
       { type: "macbook", label: "Dashboard", gradient: "from-[#A78BFA] to-[#F0ABFC]" },
       { type: "iphone", label: "Notifications", gradient: "from-[#F0ABFC] to-[#A78BFA]" },

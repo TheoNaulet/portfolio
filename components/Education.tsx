@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { education } from "@/lib/data";
+import { assetPath } from "@/lib/asset-path";
 import { fadeInUp, staggerContainer } from "@/lib/animation";
 
 export default function Education() {
@@ -37,7 +38,7 @@ export default function Education() {
                 <div className="w-[52px] h-[52px] md:w-[60px] md:h-[60px] rounded-xl bg-white border border-violet/8 flex items-center justify-center flex-shrink-0 overflow-hidden">
                   {edu.logo ? (
                     <img
-                      src={edu.logo}
+                      src={assetPath(edu.logo)}
                       alt={edu.school}
                       className="w-full h-full object-cover"
                     />

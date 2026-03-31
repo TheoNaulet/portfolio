@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/animation";
+import { assetPath } from "@/lib/asset-path";
 
 /* ─── Tech node definitions ─── */
 type TechNode = {
@@ -116,7 +117,7 @@ export default function About() {
                 }}
               >
                 {tech.img ? (
-                  <img src={tech.img} alt={tech.name} className="w-5 h-5 object-contain" />
+                  <img src={assetPath(tech.img!)} alt={tech.name} className="w-5 h-5 object-contain" />
                 ) : (
                   <div className="w-5 h-5">{tech.icon}</div>
                 )}

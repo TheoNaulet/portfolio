@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { projects } from "@/lib/data";
+import { assetPath } from "@/lib/asset-path";
 import { fadeInUp, staggerContainer } from "@/lib/animation";
 
 export default function ProjectsPage() {
@@ -54,7 +55,7 @@ export default function ProjectsPage() {
                     {project.image ? (
                       <div className="flex flex-col items-center gap-2 flex-shrink-0 opacity-70 group-hover:opacity-100 transition-opacity">
                         <img
-                          src={project.image}
+                          src={assetPath(project.image)}
                           alt={project.name}
                           className={`w-[72px] h-[72px] rounded-[18px] shadow-md object-cover ${project.slug === "h2air" ? "bg-[#0A1628]" : "bg-white"}`}
                         />

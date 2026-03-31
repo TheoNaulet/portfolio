@@ -1,3 +1,5 @@
+import { assetPath } from "@/lib/asset-path";
+
 export default function IPhoneMockup({
   label,
   gradient,
@@ -17,7 +19,7 @@ export default function IPhoneMockup({
         {/* Screen */}
         <div className={`w-full h-full rounded-[38px] overflow-hidden bg-gradient-to-br ${gradient} flex items-center justify-center relative`}>
           {image ? (
-            <img src={image} alt={label} className="absolute inset-0 w-full h-full object-cover" />
+            <img src={assetPath(image)} alt={label} className="absolute inset-0 w-full h-full object-cover" />
           ) : (
             <>
               <div className="absolute inset-0 bg-white/5" />

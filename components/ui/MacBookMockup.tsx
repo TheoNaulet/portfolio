@@ -1,3 +1,5 @@
+import { assetPath } from "@/lib/asset-path";
+
 export default function MacBookMockup({
   label,
   gradient,
@@ -18,7 +20,7 @@ export default function MacBookMockup({
           {/* Screen */}
           <div className={`w-full aspect-[16/9] rounded-[4px] overflow-hidden bg-gradient-to-br ${gradient} flex items-center justify-center relative`}>
             {image ? (
-              <img src={image} alt={label} className="absolute inset-0 w-full h-full object-cover object-top" />
+              <img src={assetPath(image)} alt={label} className="absolute inset-0 w-full h-full object-cover object-top" />
             ) : (
               <>
                 <div className="absolute inset-0 bg-white/5" />

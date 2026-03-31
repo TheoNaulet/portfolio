@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import LiquidGlassCanvas from "./liquid-glass/LiquidGlassCanvas";
+import { assetPath } from "@/lib/asset-path";
 
 const word = {
   hidden: { opacity: 0, y: 60 },
@@ -29,7 +30,7 @@ export default function Hero() {
         className="absolute inset-x-0 bottom-0 z-[5] flex justify-center pointer-events-none"
       >
         <img
-          src="/images/theo.png"
+          src={assetPath("/images/theo.png")}
           alt="Theo Naulet"
           className="h-[55vh] md:h-[82vh] w-auto object-contain object-bottom"
           style={{

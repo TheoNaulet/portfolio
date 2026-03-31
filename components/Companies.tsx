@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { companies } from "@/lib/data";
+import { assetPath } from "@/lib/asset-path";
 import { fadeInUp, staggerContainer } from "@/lib/animation";
 import LiquidGlassCanvas from "./liquid-glass/LiquidGlassCanvas";
 
@@ -20,7 +21,7 @@ function CompanyLogo({ initials, accentColor, logo, slug }: { initials: string; 
       }}
     >
       {logo ? (
-        <img src={logo} alt={initials} className={`${isFull ? "w-full h-full object-cover" : "w-10 h-10 object-contain"}`} />
+        <img src={assetPath(logo)} alt={initials} className={`${isFull ? "w-full h-full object-cover" : "w-10 h-10 object-contain"}`} />
       ) : (
         initials
       )}

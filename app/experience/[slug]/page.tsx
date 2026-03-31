@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { motion } from "framer-motion";
 import { companies } from "@/lib/data";
 import { fadeInUp, staggerContainer, scaleIn } from "@/lib/animation";
+import { assetPath } from "@/lib/asset-path";
 
 export default function ExperiencePage({
   params,
@@ -46,7 +47,7 @@ export default function ExperiencePage({
               >
                 {company.logo ? (
                   <img
-                    src={company.logo}
+                    src={assetPath(company.logo!)}
                     alt={company.name}
                     className="w-full h-full object-cover rounded-[10px]"
                   />
