@@ -279,7 +279,7 @@ function ScreenCotezillaDashboard() {
 function ScreenH2Air() {
   return (
     <video
-      src="/images/h2air-demo.mp4"
+      src="/portfolio/images/h2air-demo.mp4"
       autoPlay
       loop
       muted
@@ -381,7 +381,7 @@ function ScreenMazWebsite() {
 function ScreenTravelyzerWeb() {
   return (
     <img
-      src="/images/screen_travelyzer_web.png"
+      src="/portfolio/images/screen_travelyzer_web.png"
       alt="Travelyzer website"
       className="wg-screen-img"
     />
@@ -452,7 +452,7 @@ export default function Works() {
               </MacBook>
               <Phone className="wg-phone--travelyzer-main" hideNotch>
                 <img
-                  src="/images/travelyzer_screens/mobile/Profile_mobile.PNG"
+                  src="/portfolio/images/travelyzer_screens/mobile/Profile_mobile.PNG"
                   alt="Travelyzer Profile"
                   className="wg-screen-video"
                 />
@@ -515,7 +515,7 @@ export default function Works() {
             <div className="wg-card-scene">
               <Phone className="wg-phone--socare-main wg-phone--socare-sm" hideNotch>
                 <img
-                  src="/images/sceen_socare.webp"
+                  src="/portfolio/images/sceen_socare.webp"
                   alt="Socare app"
                   className="wg-screen-video"
                 />

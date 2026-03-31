@@ -386,7 +386,7 @@
   left: -5%;
   width: 210%;
   height: 110%;
-  background: url('/images/earth-map.jpg') repeat-x;
+  background: url('/portfolio/images/earth-map.jpg') repeat-x;
   background-size: 50% 100%;
   animation: wg-globe-rotate 25s linear infinite;
   opacity: 0.5;
