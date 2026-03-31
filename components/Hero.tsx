@@ -99,12 +99,12 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 1 }}
             className="hidden lg:block w-[180px]"
           >
-            <p className="font-condensed text-[12px] font-semibold tracking-[0.06em] uppercase text-ink2 leading-[1.5]">
-              Developpeur Full Stack
+            <p className="font-condensed text-[12px] font-bold tracking-[0.06em] uppercase text-ink leading-[1.5]">
+              Développeur Full Stack
               <br />
-              base a Montpellier,
+              basé à Montpellier,
               <br />
-              passionne de produit
+              passionné de produit
               <br />
               et de design.
             </p>

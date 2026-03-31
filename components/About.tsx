@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/animation";
-import ViewAllButton from "./ui/ViewAllButton";
 
 /* ─── Tech node definitions ─── */
 type TechNode = {
@@ -143,44 +142,41 @@ export default function About() {
         {/* Title */}
         <motion.div variants={fadeInUp} className="mb-10">
           <div className="font-condensed text-[clamp(48px,9vw,130px)] font-black uppercase tracking-[-0.02em] leading-[0.9]">
-            <span className="grad-text">Passionne</span>
+            <span className="grad-text">Passionn&eacute;</span>
           </div>
           <div className="font-condensed text-[clamp(48px,9vw,130px)] font-black uppercase tracking-[-0.02em] leading-[0.9]">
             <span className="grad-text">par le</span>
           </div>
           <div className="font-condensed text-[clamp(48px,9vw,130px)] font-black uppercase tracking-[-0.02em] leading-[0.9]">
-            <span className="grad-text">developpement</span>
+            <span className="grad-text">d&eacute;veloppement</span>
           </div>
         </motion.div>
 
         {/* Body text */}
-        <div className="max-w-[500px] flex flex-col gap-6">
+        <div className="max-w-[520px] flex flex-col gap-6">
           <motion.div variants={fadeInUp}>
-            <div className="font-condensed text-[16px] font-extrabold uppercase tracking-[0.06em] text-ink mb-2 pb-2 border-b-2 border-ink inline-block">
-              Experience
-            </div>
-            <p className="font-condensed text-[12px] font-semibold uppercase tracking-[0.06em] text-ink2 leading-[1.7] mt-3">
-              Theo est developpeur Full Stack chez Sonup depuis 2023 ou il
-              developpe une app mobile et un site web avec la meme codebase React
-              Native / Next.js.
-            </p>
-            <p className="font-condensed text-[12px] font-semibold uppercase tracking-[0.06em] text-ink2 leading-[1.7] mt-4">
-              En parallele il construit Travelyzer, une plateforme de voyage
-              AI-native avec reseau social integre, et gere TN Agency, son studio
-              freelance.
+            <p className="font-condensed text-[12px] font-semibold uppercase tracking-[0.06em] text-ink2 leading-[1.7]">
+              Je construis des sites et des applications avec l&apos;&eacute;cosyst&egrave;me
+              JavaScript. React, Next.js, React Native, Node. Mais au-del&agrave; des
+              stacks, ce que j&apos;aime c&apos;est l&apos;acte de cr&eacute;er.
             </p>
           </motion.div>
 
           <motion.div variants={fadeInUp}>
-            <p className="font-condensed text-[12px] font-semibold uppercase tracking-[0.07em] text-ink2 leading-[1.7]">
-              Adepte du design system et des standards iOS natifs, il puise son
-              inspiration dans le minimalisme et les interfaces qui respirent.
+            <p className="font-condensed text-[12px] font-semibold uppercase tracking-[0.06em] text-ink2 leading-[1.7]">
+              Dans mon temps libre je code des projets qui n&apos;existent pas
+              encore. Un robot de trading, une app de voyage, un outil de veille.
+              L&apos;id&eacute;e arrive, je lance VS Code.
             </p>
           </motion.div>
 
           <motion.div variants={fadeInUp}>
-            <ViewAllButton />
+            <p className="font-condensed text-[12px] font-semibold uppercase tracking-[0.06em] text-ink2 leading-[1.7]">
+              Donner vie a quelque chose depuis une page blanche, c&apos;est ca
+              qui m&apos;a rendu accro au code.
+            </p>
           </motion.div>
+
         </div>
       </motion.div>
     </section>

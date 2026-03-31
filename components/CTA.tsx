@@ -15,7 +15,7 @@ export default function CTA() {
         <div className="flex flex-col md:grid md:grid-cols-[auto_1fr_auto] items-center gap-6 md:gap-8">
           <motion.div variants={fadeInUp}>
             <div className="grad-text font-condensed text-[clamp(44px,8vw,110px)] font-black uppercase tracking-[-0.02em] leading-[0.9]">
-              Une idee ?
+              Une id&eacute;e ?
             </div>
           </motion.div>
 

@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/animation";
 
 const passions = [
-  { emoji: "\u26BD", label: "Sport", desc: "Padel, beachvolley, sports collectifs" },
+  { emoji: "\u26BD", label: "Sport", desc: "Padel, beach-volley, sports collectifs" },
   { emoji: "\uD83D\uDCC8", label: "Investissement", desc: "Bourse, crypto, patrimoine" },
-  { emoji: "\uD83D\uDE80", label: "Entreprendre", desc: "Creer, lancer, iterer" },
-  { emoji: "\uD83D\uDCBB", label: "Tech", desc: "Veille, side projects, nouveautes" },
-  { emoji: "\uD83C\uDF7B", label: "Faire la fete", desc: "Bons moments entre amis" },
-  { emoji: "\uD83C\uDF73", label: "Cuisine", desc: "Tester, improviser, regaler" },
-  { emoji: "\u2708\uFE0F", label: "Voyager", desc: "Decouvrir, s'inspirer, explorer" },
-  { emoji: "\uD83C\uDFAE", label: "Jeux video", desc: "FPS, strategie, detente" },
+  { emoji: "\uD83D\uDE80", label: "Entreprendre", desc: "Créer, lancer, itérer" },
+  { emoji: "\uD83D\uDCBB", label: "Tech", desc: "Veille, side projects, nouveautés" },
+  { emoji: "\uD83C\uDF7B", label: "Faire la fête", desc: "Bons moments entre amis" },
+  { emoji: "\uD83C\uDF73", label: "Cuisine", desc: "Tester, improviser, régaler" },
+  { emoji: "\u2708\uFE0F", label: "Voyager", desc: "Découvrir, s'inspirer, explorer" },
+  { emoji: "\uD83C\uDFAE", label: "Jeux vidéo", desc: "FPS, stratégie, détente" },
 ];
 
 export default function Testimonials() {

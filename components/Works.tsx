@@ -74,7 +74,7 @@ function ScreenTravelyzerMap() {
 function ScreenTravelyzerItin() {
   return (
     <div className="wg-screen-travelyzer-itin">
-      <div className="wg-itin-header">Itineraire &middot; Sicile</div>
+      <div className="wg-itin-header">Itin&eacute;raire &middot; Sicile</div>
       {[
         { day: "Jour 1 \u00b7 Palerme", desc: "Cathedrale \u00b7 Marche de Ballaro \u00b7 Quattro Canti", color: undefined, showLine: true },
         { day: "Jour 2 \u00b7 Agrigente", desc: "Vallee des Temples \u00b7 Scala dei Turchi", color: "#a78bfa", showLine: true },
@@ -107,8 +107,8 @@ function ScreenSocareDashboard() {
       </div>
       <div className="wg-socare-row">
         <div className="wg-socare-tile">
-          <div className="wg-socare-tile-label">Rembourse</div>
-          <div className="wg-socare-tile-val">184&euro;</div>
+          <div className="wg-socare-tile-label">Remboursé</div>
+          <div className="wg-socare-tile-val">184 &euro;</div>
         </div>
         <div className="wg-socare-tile">
           <div className="wg-socare-tile-label">En attente</div>
@@ -144,7 +144,7 @@ function ScreenSocareHistory() {
       <div style={{ display: "flex", flexDirection: "column" as const, gap: 4 }}>
         <div style={{ background: "rgba(59,108,247,0.1)", borderRadius: 6, padding: "5px 7px", border: "1px solid rgba(59,108,247,0.15)" }}>
           <div style={{ fontSize: 6, color: "rgba(200,220,255,0.7)", fontWeight: 600 }}>Consultation &middot; Dr. Martin</div>
-          <div style={{ fontSize: 5, color: "rgba(100,150,255,0.4)", marginTop: 1 }}>15 jan 2025 &middot; Rembourse</div>
+          <div style={{ fontSize: 5, color: "rgba(100,150,255,0.4)", marginTop: 1 }}>15 jan 2025 &middot; Remboursé</div>
         </div>
         <div style={{ background: "rgba(59,108,247,0.1)", borderRadius: 6, padding: "5px 7px", border: "1px solid rgba(59,108,247,0.15)" }}>
           <div style={{ fontSize: 6, color: "rgba(200,220,255,0.7)", fontWeight: 600 }}>Pharmacie &middot; Ordonnance</div>
@@ -432,8 +432,8 @@ export default function Works() {
             <span className="works-count">05</span>
           </div>
           <p className="works-header-desc">
-            Au fil de ses experiences, Theo a eu l&apos;opportunite de travailler
-            sur une grande variete de projets.
+            Une s&eacute;lection de projets sur lesquels j&apos;ai eu l&apos;opportunit&eacute;
+            de travailler ces derni&egrave;res ann&eacute;es.
           </p>
         </div>
 
@@ -487,7 +487,7 @@ export default function Works() {
               <Phone className="wg-phone--h2air-med" hideNotch>
                 <ScreenH2Air />
               </Phone>
-              <span className="wg-badge wg-badge--web">App Web</span>
+              <span className="wg-badge wg-badge--app">App Mobile</span>
             </div>
             <div className="wg-card-info">
               <div>
@@ -531,6 +531,7 @@ export default function Works() {
                 <div className="wg-card-tags">
                   <span className="wg-tag">React Native</span>
                   <span className="wg-tag">Sante</span>
+                  <span className="wg-tag">Chef de projet</span>
                 </div>
               </div>
               <span className="wg-card-link">
@@ -549,7 +550,7 @@ export default function Works() {
               <div className="wg-maz-scene-bg" />
               <MacBook className="wg-macbook--maz">
                 <div className="wg-screen-wip">
-                  <div className="wg-screen-wip-label">En cours de creation</div>
+                  <div className="wg-screen-wip-label">En cours de cr&eacute;ation</div>
                 </div>
               </MacBook>
               <span className="wg-badge wg-badge--brand">Branding</span>

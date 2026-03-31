@@ -55,7 +55,15 @@ export default function ProjectPage({
                 {project.role}
               </span>
             </div>
-            <h1 className="grad-text font-condensed text-[clamp(64px,12vw,160px)] font-black uppercase tracking-[-0.02em] leading-[0.9]">
+            <h1
+              className="font-condensed text-[clamp(64px,12vw,160px)] font-black uppercase tracking-[-0.02em] leading-[0.9]"
+              style={project.titleGradient ? {
+                background: project.titleGradient,
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+              } : undefined}
+            >
               {project.name}
             </h1>
             <p className="font-condensed text-[14px] md:text-[16px] font-semibold tracking-[0.04em] uppercase text-ink2 leading-[1.7] mt-6 max-w-[600px]">
@@ -97,15 +105,97 @@ export default function ProjectPage({
             )}
           </motion.div>
 
-          {/* Hero mockup - large */}
+          {/* Hero showcase — Apple-like */}
           <motion.div
             variants={scaleIn}
-            className={`w-full aspect-[16/9] rounded-2xl overflow-hidden bg-gradient-to-br ${project.gradient} flex items-center justify-center relative mb-20`}
+            className="w-full rounded-3xl overflow-hidden bg-[#faf8ff] relative mb-20 py-16 md:py-24 px-8 md:px-16 border border-violet/8"
           >
-            <div className="absolute inset-0 bg-white/5" />
-            <span className="font-condensed text-[clamp(40px,8vw,96px)] font-black uppercase text-white/50 tracking-[-0.02em] relative z-10">
-              {project.name}
-            </span>
+            <div className="relative z-10 flex flex-col md:flex-row items-center gap-10 md:gap-16">
+              {/* Text side */}
+              <div className="flex-1 text-center md:text-left">
+                <p className="text-[13px] md:text-[14px] font-light tracking-[0.15em] uppercase text-ink2/50 mb-4">
+                  {project.year}
+                </p>
+                {project.showcase ? (
+                  <>
+                    <h2 className="text-[clamp(32px,5vw,56px)] font-extralight text-ink leading-[1.1] tracking-[-0.02em]">
+                      {project.showcase.headline}
+                      <br />
+                      <span className={`font-medium bg-gradient-to-r ${project.showcase.highlightColor} bg-clip-text text-transparent`}>
+                        {project.showcase.highlight}
+                      </span>
+                    </h2>
+                    <p className="text-[14px] md:text-[16px] font-light text-ink2 leading-[1.7] mt-6 max-w-[380px] mx-auto md:mx-0">
+                      {project.showcase.sub}
+                    </p>
+                  </>
+                ) : (
+                  <h2 className="text-[clamp(32px,5vw,56px)] font-extralight text-ink leading-[1.1] tracking-[-0.02em]">
+                    {project.name}
+                  </h2>
+                )}
+              </div>
+
+              {/* Mockup */}
+              {(() => {
+                const iphoneScreens = project.screens.filter(s => s.type === "iphone" && s.image);
+                const macbookScreens = project.screens.filter(s => s.type === "macbook" && s.image);
+                if (iphoneScreens.length >= 2) {
+                  return (
+                    <div className="relative w-[260px] md:w-[300px] h-[420px] md:h-[500px] flex-shrink-0">
+                      <div className="absolute right-0 top-4 w-[180px] md:w-[210px] rotate-[6deg] opacity-75 z-[1]">
+                        <div className="bg-[#1a1a1c] rounded-[32px] p-[4px] border border-black/10 shadow-[0_20px_60px_rgba(0,0,0,0.1)]">
+                          <div className="rounded-[28px] overflow-hidden">
+                            <img src={iphoneScreens[1].image} alt={iphoneScreens[1].label} className="w-full h-auto" />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="absolute left-0 top-0 w-[180px] md:w-[210px] -rotate-[3deg] z-[2]">
+                        <div className="bg-[#1a1a1c] rounded-[32px] p-[4px] border border-black/10 shadow-[0_30px_80px_rgba(0,0,0,0.15)]">
+                          <div className="absolute top-[10px] left-1/2 -translate-x-1/2 w-[50px] h-[16px] bg-black rounded-full z-10" />
+                          <div className="rounded-[28px] overflow-hidden">
+                            <img src={iphoneScreens[0].image} alt={iphoneScreens[0].label} className="w-full h-auto" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+                if (iphoneScreens.length === 1) {
+                  return (
+                    <div className="relative w-[200px] md:w-[230px] flex-shrink-0">
+                      <div className="bg-[#1a1a1c] rounded-[36px] p-[5px] border border-black/10 shadow-[0_30px_80px_rgba(0,0,0,0.12)]">
+                        <div className="absolute top-[12px] left-1/2 -translate-x-1/2 w-[60px] h-[18px] bg-black rounded-full z-10" />
+                        <div className="rounded-[31px] overflow-hidden">
+                          <img src={iphoneScreens[0].image} alt={iphoneScreens[0].label} className="w-full h-auto" />
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+                if (macbookScreens.length > 0) {
+                  return (
+                    <div className="relative w-[320px] md:w-[400px] flex-shrink-0">
+                      <div className="bg-[#2a2a2e] rounded-t-[10px] p-[6px] border border-black/8 border-b-0">
+                        <div className="rounded-[4px] overflow-hidden">
+                          <img src={macbookScreens[0].image} alt={macbookScreens[0].label} className="w-full h-auto" />
+                        </div>
+                      </div>
+                      <div className="h-[8px] bg-gradient-to-b from-[#333338] to-[#1e1e22] rounded-b-[4px]" />
+                      <div className="mx-[-3%] h-[6px] bg-gradient-to-b from-[#d1d1d1] to-[#b8b8b8] rounded-b-[6px]" />
+                    </div>
+                  );
+                }
+                if (project.image) {
+                  return (
+                    <div className="relative w-[160px] md:w-[200px] flex-shrink-0">
+                      <img src={project.image} alt={project.name} className="w-full h-auto object-contain drop-shadow-lg" />
+                    </div>
+                  );
+                }
+                return null;
+              })()}
+            </div>
           </motion.div>
 
           {/* About section */}
@@ -115,7 +205,7 @@ export default function ProjectPage({
           >
             <div>
               <h2 className="font-condensed text-[32px] md:text-[48px] font-black uppercase tracking-[-0.02em] text-ink leading-[0.9] mb-6">
-                A propos du projet
+                À propos du projet
               </h2>
               <p className="font-condensed text-[12px] font-semibold tracking-[0.06em] uppercase text-ink2 leading-[1.8]">
                 {project.description}
@@ -125,7 +215,7 @@ export default function ProjectPage({
               {/* Role & Duration */}
               <div>
                 <h3 className="font-condensed text-[14px] font-extrabold uppercase tracking-[0.06em] text-ink mb-2 pb-2 border-b-2 border-ink inline-block">
-                  Role
+                  Rôle
                 </h3>
                 <p className="font-condensed text-[12px] font-semibold uppercase tracking-[0.06em] text-ink2 leading-[1.7] mt-2">
                   {project.role}
@@ -133,7 +223,7 @@ export default function ProjectPage({
               </div>
               <div>
                 <h3 className="font-condensed text-[14px] font-extrabold uppercase tracking-[0.06em] text-ink mb-2 pb-2 border-b-2 border-ink inline-block">
-                  Duree
+                  Durée
                 </h3>
                 <p className="font-condensed text-[12px] font-semibold uppercase tracking-[0.06em] text-ink2 leading-[1.7] mt-2">
                   {project.duration}
@@ -157,9 +247,33 @@ export default function ProjectPage({
             </div>
           </motion.div>
 
+          {project.status === "in-progress" || !project.screens.some(s => s.image) ? (
+            /* En cours de création */
+            <motion.div variants={fadeInUp} className="mb-20 md:mb-28">
+              <h2
+                className="font-condensed text-[clamp(40px,7vw,80px)] font-black uppercase tracking-[-0.02em] leading-[0.9] mb-10"
+                style={project.titleGradient ? { background: project.titleGradient, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" } : undefined}
+              >
+                Screens
+              </h2>
+              <div className="w-full py-20 rounded-2xl border border-violet/8 bg-cream/40 flex flex-col items-center justify-center">
+                <span className="font-condensed text-[48px] mb-4">🚧</span>
+                <p className="font-condensed text-[18px] md:text-[22px] font-extrabold uppercase tracking-[0.04em] text-ink/40">
+                  En cours de création
+                </p>
+                <p className="font-condensed text-[12px] font-semibold tracking-[0.08em] uppercase text-ink2/50 mt-2">
+                  Les screens arrivent bientôt
+                </p>
+              </div>
+            </motion.div>
+          ) : (
+            <>
           {/* Screens section - iPhone row */}
           <motion.div variants={fadeInUp} className="mb-12">
-            <h2 className="grad-text font-condensed text-[clamp(40px,7vw,80px)] font-black uppercase tracking-[-0.02em] leading-[0.9] mb-10">
+            <h2
+              className="font-condensed text-[clamp(40px,7vw,80px)] font-black uppercase tracking-[-0.02em] leading-[0.9] mb-10"
+              style={project.titleGradient ? { background: project.titleGradient, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" } : undefined}
+            >
               Screens
             </h2>
           </motion.div>
@@ -205,6 +319,8 @@ export default function ProjectPage({
                 </motion.div>
               ))}
           </motion.div>
+            </>
+          )}
 
           {/* Features */}
           <motion.div
@@ -216,9 +332,10 @@ export default function ProjectPage({
           >
             <motion.h2
               variants={fadeInUp}
-              className="grad-text font-condensed text-[clamp(40px,7vw,80px)] font-black uppercase tracking-[-0.02em] leading-[0.9] mb-10"
+              className="font-condensed text-[clamp(40px,7vw,80px)] font-black uppercase tracking-[-0.02em] leading-[0.9] mb-10"
+              style={project.titleGradient ? { background: project.titleGradient, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" } : undefined}
             >
-              Fonctionnalites
+              Fonctionnalités
             </motion.h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {project.features.map((feature, i) => (
@@ -227,7 +344,10 @@ export default function ProjectPage({
                   variants={fadeInUp}
                   className="flex gap-4 items-start p-5 rounded-xl bg-cream/60 border border-violet/5"
                 >
-                  <span className="font-condensed text-[28px] font-black text-violet/20 leading-none flex-shrink-0">
+                  <span
+                    className="font-condensed text-[28px] font-black leading-none flex-shrink-0 opacity-30"
+                    style={project.titleGradient ? { background: project.titleGradient, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" } : undefined}
+                  >
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <p className="font-condensed text-[12px] font-semibold tracking-[0.06em] uppercase text-ink2 leading-[1.7] pt-1">
@@ -254,7 +374,10 @@ export default function ProjectPage({
                 Projet suivant
               </p>
               <div className="flex items-center gap-6">
-                <h3 className="grad-text font-condensed text-[clamp(40px,8vw,100px)] font-black uppercase tracking-[-0.02em] leading-[0.9] group-hover:opacity-80 transition-opacity">
+                <h3
+                  className="font-condensed text-[clamp(40px,8vw,100px)] font-black uppercase tracking-[-0.02em] leading-[0.9] group-hover:opacity-80 transition-opacity"
+                  style={nextProject.titleGradient ? { background: nextProject.titleGradient, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" } : undefined}
+                >
                   {nextProject.name}
                 </h3>
                 <span className="font-condensed text-[32px] text-ink2 group-hover:text-violet group-hover:translate-x-3 transition-all">

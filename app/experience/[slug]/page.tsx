@@ -42,13 +42,13 @@ export default function ExperiencePage({
             <div className="flex flex-wrap items-center gap-3 mb-5">
               <span
                 className="inline-flex items-center justify-center w-[56px] h-[56px] rounded-[12px] font-condensed text-[22px] font-black text-white tracking-[-0.02em]"
-                style={{ background: company.accentColor }}
+                style={{ background: company.logo ? "transparent" : company.accentColor }}
               >
                 {company.logo ? (
                   <img
                     src={company.logo}
                     alt={company.name}
-                    className="w-9 h-9 object-contain"
+                    className="w-full h-full object-cover rounded-[10px]"
                   />
                 ) : (
                   company.initials
@@ -70,6 +70,70 @@ export default function ExperiencePage({
             <p className="font-condensed text-[14px] md:text-[16px] font-semibold tracking-[0.04em] uppercase text-ink2 leading-[1.7] mt-6 max-w-[600px]">
               {company.context}
             </p>
+            {company.slug === "viatransit" && (
+              <div className="flex flex-wrap items-center gap-3 mt-8">
+                <a
+                  href="https://viatransit.fr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 font-condensed text-[13px] font-bold tracking-[0.08em] uppercase text-white bg-ink rounded-full px-6 py-2.5 no-underline hover:bg-violet transition-colors"
+                >
+                  viatransit.fr &#8599;
+                </a>
+                <a
+                  href="https://apps.apple.com/fr/app/viatransit/id1456180267"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 font-condensed text-[13px] font-bold tracking-[0.08em] uppercase text-ink border-[1.5px] border-ink rounded-full px-6 py-2.5 no-underline hover:bg-ink hover:text-white transition-colors"
+                >
+                  App Store &#8599;
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=fr.viatransit.app&hl=fr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 font-condensed text-[13px] font-bold tracking-[0.08em] uppercase text-ink border-[1.5px] border-ink rounded-full px-6 py-2.5 no-underline hover:bg-ink hover:text-white transition-colors"
+                >
+                  Google Play &#8599;
+                </a>
+              </div>
+            )}
+            {company.slug === "sonup" && (
+              <div className="flex flex-wrap items-center gap-3 mt-8">
+                <a
+                  href="https://www.socare.fr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 font-condensed text-[13px] font-bold tracking-[0.08em] uppercase text-white bg-ink rounded-full px-6 py-2.5 no-underline hover:bg-violet transition-colors"
+                >
+                  Site vitrine &#8599;
+                </a>
+                <a
+                  href="https://app.socare.fr/register"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 font-condensed text-[13px] font-bold tracking-[0.08em] uppercase text-white bg-ink rounded-full px-6 py-2.5 no-underline hover:bg-violet transition-colors"
+                >
+                  Webapp &#8599;
+                </a>
+                <a
+                  href="https://apps.apple.com/fr/app/socare/id6476305421"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 font-condensed text-[13px] font-bold tracking-[0.08em] uppercase text-ink border-[1.5px] border-ink rounded-full px-6 py-2.5 no-underline hover:bg-ink hover:text-white transition-colors"
+                >
+                  App Store &#8599;
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.sonup.socare&hl=fr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 font-condensed text-[13px] font-bold tracking-[0.08em] uppercase text-ink border-[1.5px] border-ink rounded-full px-6 py-2.5 no-underline hover:bg-ink hover:text-white transition-colors"
+                >
+                  Google Play &#8599;
+                </a>
+              </div>
+            )}
           </motion.div>
 
           {/* Accent bar */}
@@ -88,7 +152,7 @@ export default function ExperiencePage({
           >
             <div>
               <h2 className="font-condensed text-[28px] md:text-[40px] font-black uppercase tracking-[-0.02em] text-ink leading-[0.9] mb-6">
-                L&apos;experience
+                L&apos;expérience
               </h2>
               <p className="font-condensed text-[12px] font-semibold tracking-[0.06em] uppercase text-ink2 leading-[1.9]">
                 {company.description}
@@ -96,7 +160,7 @@ export default function ExperiencePage({
             </div>
             <div>
               <h3 className="font-condensed text-[14px] font-extrabold uppercase tracking-[0.06em] text-ink mb-2 pb-2 border-b-2 border-ink inline-block">
-                Stack & competences
+                Stack & compétences
               </h3>
               <div className="flex flex-wrap gap-2 mt-4">
                 {company.tags.map((tag) => (
@@ -158,7 +222,7 @@ export default function ExperiencePage({
               variants={fadeInUp}
               className="grad-text font-condensed text-[clamp(36px,7vw,72px)] font-black uppercase tracking-[-0.02em] leading-[0.9] mb-10"
             >
-              Realisations
+              Réalisations
             </motion.h2>
             <div className="flex flex-col gap-0">
               {company.achievements.map((achievement, i) => (
@@ -192,7 +256,7 @@ export default function ExperiencePage({
               className="group block no-underline"
             >
               <p className="font-condensed text-[12px] font-bold tracking-[0.1em] uppercase text-ink2 mb-3">
-                Experience suivante
+                Expérience suivante
               </p>
               <div className="flex items-center gap-6">
                 <h3 className="grad-text font-condensed text-[clamp(36px,8vw,90px)] font-black uppercase tracking-[-0.02em] leading-[0.9] group-hover:opacity-80 transition-opacity">

@@ -107,7 +107,7 @@ export default function Companies() {
           <motion.div variants={fadeInUp} className="max-w-[220px] pb-2 mt-4 md:mt-0">
             <p className="font-condensed text-[12px] font-semibold tracking-[0.07em] uppercase text-ink2 leading-[1.7]">
               Des startups aux grandes enseignes, des produits mobiles aux
-              plateformes web — hover pour decouvrir.
+              plateformes web.
             </p>
           </motion.div>
         </div>
