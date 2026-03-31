@@ -24,6 +24,11 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npx next build
+      - name: Fix asset paths in static HTML
+        run: |
+          find out -name '*.html' -exec sed -i 's|src="/images/|src="/portfolio/images/|g' {} +
+          find out -name '*.html' -exec sed -i "s|url('/images/|url('/portfolio/images/|g" {} +
+          find out -name '*.css' -exec sed -i "s|url('/images/|url('/portfolio/images/|g" {} +
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out

@@ -29,7 +29,7 @@ export default function Hero() {
         className="absolute inset-x-0 bottom-0 z-[5] hidden md:flex justify-center pointer-events-none"
       >
         <img
-          src="/portfolio/images/theo.png"
+          src="/images/theo.png"
           alt="Theo Naulet"
           className="h-[82vh] w-auto object-contain object-bottom"
           style={{

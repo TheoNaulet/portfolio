@@ -12,17 +12,17 @@ type TechNode = {
 };
 
 const techs: TechNode[] = [
-  { name: "React", color: "#61DAFB", img: "/portfolio/images/tech_logos/React-icon.svg.png" },
-  { name: "Next.js", color: "#666", img: "/portfolio/images/tech_logos/Next.webp" },
-  { name: "TypeScript", color: "#3178C6", img: "/portfolio/images/tech_logos/Typescript_logo_2020.svg.png" },
-  { name: "JavaScript", color: "#F7DF1E", img: "/portfolio/images/tech_logos/Unofficial_JavaScript_logo_2.svg.png" },
-  { name: "Expo", color: "#888", img: "/portfolio/images/tech_logos/expo_logo_icon_145293.webp" },
-  { name: "NestJS", color: "#E0234E", img: "/portfolio/images/tech_logos/NestJS.svg" },
-  { name: "Angular", color: "#DD0031", img: "/portfolio/images/tech_logos/angular_logo_icon_169595.webp" },
-  { name: "Java", color: "#ED8B00", img: "/portfolio/images/tech_logos/Java_Logo.svg.png" },
-  { name: "Tailwind", color: "#06B6D4", img: "/portfolio/images/tech_logos/Tailwind_CSS_Logo.svg.png" },
-  { name: "iOS", color: "#999", img: "/portfolio/images/tech_logos/Apple_logo_black.svg" },
-  { name: "Android", color: "#3DDC84", img: "/portfolio/images/tech_logos/Android-Logo-2014.png" },
+  { name: "React", color: "#61DAFB", img: "/images/tech_logos/React-icon.svg.png" },
+  { name: "Next.js", color: "#666", img: "/images/tech_logos/Next.webp" },
+  { name: "TypeScript", color: "#3178C6", img: "/images/tech_logos/Typescript_logo_2020.svg.png" },
+  { name: "JavaScript", color: "#F7DF1E", img: "/images/tech_logos/Unofficial_JavaScript_logo_2.svg.png" },
+  { name: "Expo", color: "#888", img: "/images/tech_logos/expo_logo_icon_145293.webp" },
+  { name: "NestJS", color: "#E0234E", img: "/images/tech_logos/NestJS.svg" },
+  { name: "Angular", color: "#DD0031", img: "/images/tech_logos/angular_logo_icon_169595.webp" },
+  { name: "Java", color: "#ED8B00", img: "/images/tech_logos/Java_Logo.svg.png" },
+  { name: "Tailwind", color: "#06B6D4", img: "/images/tech_logos/Tailwind_CSS_Logo.svg.png" },
+  { name: "iOS", color: "#999", img: "/images/tech_logos/Apple_logo_black.svg" },
+  { name: "Android", color: "#3DDC84", img: "/images/tech_logos/Android-Logo-2014.png" },
 ];
 
 // Node positions for the constellation (right half)
