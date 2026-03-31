@@ -18,7 +18,7 @@ const word = {
 
 export default function Hero() {
   return (
-    <section className="bg-cream relative overflow-hidden min-h-[88vh] flex flex-col">
+    <section className="bg-cream relative overflow-hidden min-h-[70vh] md:min-h-[88vh] flex flex-col">
       <LiquidGlassCanvas variant="hero" />
 
       {/* Photo — absolute, behind DEVELOPER, in front of FULL/STACK */}
@@ -26,12 +26,12 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.92 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="absolute inset-x-0 bottom-0 z-[5] hidden md:flex justify-center pointer-events-none"
+        className="absolute inset-x-0 bottom-0 z-[5] flex justify-center pointer-events-none"
       >
         <img
           src="/images/theo.png"
           alt="Theo Naulet"
-          className="h-[82vh] w-auto object-contain object-bottom"
+          className="h-[55vh] md:h-[82vh] w-auto object-contain object-bottom"
           style={{
             maskImage:
               "linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%)",
@@ -54,9 +54,9 @@ export default function Hero() {
       </motion.div>
 
       {/* Typography */}
-      <div className="relative px-6 md:px-12 flex-1 flex flex-col justify-center max-w-[1280px] mx-auto w-full">
+      <div className="relative px-6 md:px-12 flex-1 flex flex-col justify-end pb-8 md:justify-center md:pb-0 max-w-[1280px] mx-auto w-full">
         {/* Row 1: FULL  STACK — z-index behind photo */}
-        <div className="flex flex-col md:flex-row items-center justify-between leading-none relative z-[2]">
+        <div className="flex flex-col md:flex-row items-center justify-between leading-none relative z-[8] md:z-[2]">
           <motion.span
             custom={0}
             variants={word}
@@ -115,7 +115,7 @@ export default function Hero() {
             variants={word}
             initial="hidden"
             animate="visible"
-            className="font-condensed text-[clamp(48px,8vw,110px)] font-black text-violet opacity-60 md:self-end pb-2"
+            className="hidden md:block font-condensed text-[clamp(48px,8vw,110px)] font-black text-violet opacity-60 md:self-end pb-2"
           >
             &lt;/&gt;
           </motion.span>
