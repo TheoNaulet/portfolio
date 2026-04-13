@@ -52,27 +52,54 @@ export default function ProjectsPage() {
                     </span>
 
                     {/* Thumbnail */}
-                    {project.image ? (
-                      <div className="flex flex-col items-center gap-2 flex-shrink-0 opacity-70 group-hover:opacity-100 transition-opacity">
-                        <img
-                          src={assetPath(project.image)}
-                          alt={project.name}
-                          className={`w-[72px] h-[72px] rounded-[18px] shadow-md object-cover ${project.slug === "h2air" ? "bg-[#0A1628]" : "bg-white"}`}
-                        />
-                        <span className="font-condensed text-[11px] font-semibold tracking-[0.02em] text-ink2">
-                          {project.name}
-                        </span>
-                      </div>
-                    ) : (
-                      <div
-                        className={`w-full md:w-[200px] lg:w-[260px] aspect-[16/10] rounded-lg overflow-hidden bg-gradient-to-br ${project.gradient} opacity-60 group-hover:opacity-100 transition-opacity flex items-center justify-center flex-shrink-0 relative`}
-                      >
-                        <div className="absolute inset-0 bg-white/10" />
-                        <span className="font-condensed text-[24px] font-black uppercase text-white/60 relative z-10">
-                          {project.name}
-                        </span>
-                      </div>
-                    )}
+                    {(() => {
+                      const macScreen = project.screens.find(s => s.type === "macbook" && s.image);
+                      if (macScreen?.image) {
+                        return (
+                          <div className="w-full md:w-[200px] lg:w-[260px] flex-shrink-0 opacity-70 group-hover:opacity-100 transition-opacity">
+                            {/* Browser window frame */}
+                            <div className="rounded-t-lg overflow-hidden border border-black/5">
+                              <div className="flex items-center gap-1.5 px-3 py-1.5 bg-[#e8e6e3]">
+                                <span className="w-[7px] h-[7px] rounded-full bg-[#ff5f57]" />
+                                <span className="w-[7px] h-[7px] rounded-full bg-[#febc2e]" />
+                                <span className="w-[7px] h-[7px] rounded-full bg-[#28c840]" />
+                              </div>
+                              <div className="aspect-[16/10] overflow-hidden">
+                                <img
+                                  src={assetPath(macScreen.image)}
+                                  alt={project.name}
+                                  className="w-full h-full object-cover object-top"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      }
+                      if (project.image) {
+                        return (
+                          <div className="flex flex-col items-center gap-2 flex-shrink-0 opacity-70 group-hover:opacity-100 transition-opacity">
+                            <img
+                              src={assetPath(project.image)}
+                              alt={project.name}
+                              className={`w-[72px] h-[72px] rounded-[18px] shadow-md object-cover ${project.slug === "h2air" ? "bg-[#0A1628]" : "bg-white"}`}
+                            />
+                            <span className="font-condensed text-[11px] font-semibold tracking-[0.02em] text-ink2">
+                              {project.name}
+                            </span>
+                          </div>
+                        );
+                      }
+                      return (
+                        <div
+                          className={`w-full md:w-[200px] lg:w-[260px] aspect-[16/10] rounded-lg overflow-hidden bg-gradient-to-br ${project.gradient} opacity-60 group-hover:opacity-100 transition-opacity flex items-center justify-center flex-shrink-0 relative`}
+                        >
+                          <div className="absolute inset-0 bg-white/10" />
+                          <span className="font-condensed text-[24px] font-black uppercase text-white/60 relative z-10">
+                            {project.name}
+                          </span>
+                        </div>
+                      );
+                    })()}
 
                     {/* Info */}
                     <div className="flex-1">
