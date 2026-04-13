@@ -254,6 +254,12 @@ export const projects: Project[] = [
       { type: "macbook", label: "Comment ça marche", gradient: "from-[#7C3AED] to-[#00C48C]", image: "/images/kasha/landing2.png" },
       { type: "macbook", label: "Fonctionnalités", gradient: "from-[#00C48C] to-[#6C3AED]", image: "/images/kasha/landing3.png" },
       { type: "macbook", label: "Features App", gradient: "from-[#6C3AED] to-[#00C48C]", image: "/images/kasha/landing4.png" },
+      { type: "iphone", label: "Accueil", gradient: "from-[#7C3AED] to-[#00C48C]", image: "/images/kasha/IMG_4494.PNG" },
+      { type: "iphone", label: "Marchand", gradient: "from-[#00C48C] to-[#7C3AED]", image: "/images/kasha/IMG_4495.PNG" },
+      { type: "iphone", label: "Wallet", gradient: "from-[#7C3AED] to-[#6C3AED]", image: "/images/kasha/IMG_4496.PNG" },
+      { type: "iphone", label: "Profil", gradient: "from-[#6C3AED] to-[#7C3AED]", image: "/images/kasha/IMG_4497.PNG" },
+      { type: "iphone", label: "Explorer", gradient: "from-[#7C3AED] to-[#00C48C]", image: "/images/kasha/IMG_4498.PNG" },
+      { type: "iphone", label: "Carte", gradient: "from-[#00C48C] to-[#6C3AED]", image: "/images/kasha/IMG_4499.PNG" },
     ],
   },
   {
