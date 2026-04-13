@@ -350,23 +350,23 @@ function ScreenMazWebsite() {
   return (
     <div className="wg-screen-maz-web">
       <div className="wg-maz-nav">
-        <div className="wg-maz-nav-logo">MAZ</div>
+        <div className="wg-maz-nav-logo">LENYMAZ</div>
         <div className="wg-maz-nav-links">
-          <span>Musique</span>
-          <span>Bio</span>
+          <span>Formules</span>
+          <span>Vid&eacute;os</span>
           <span>Contact</span>
         </div>
       </div>
       <div className="wg-maz-hero">
         <div className="wg-maz-hero-left">
-          <div className="wg-maz-hero-eyebrow">Artiste &middot; Mediterranee</div>
+          <div className="wg-maz-hero-eyebrow">Artiste &middot; Pop M&eacute;diterran&eacute;e</div>
           <div className="wg-maz-hero-title">
-            Entre<br />deux<br /><em>rives.</em>
+            Bienvenue<br />dans ma<br /><em>Pop Med.</em>
           </div>
           <div className="wg-maz-hero-sub">
-            Pop mediterraneenne aux influences orientales et modernes.
+            De la pop solaire aux accents de M&eacute;diterran&eacute;e.
           </div>
-          <div className="wg-maz-hero-cta">Ecouter &rarr;</div>
+          <div className="wg-maz-hero-cta">&Eacute;couter &rarr;</div>
         </div>
         <div className="wg-maz-hero-right">
           <div className="wg-maz-photo-placeholder" />
@@ -541,7 +541,7 @@ export default function Works() {
             </div>
           </Link>
 
-          {/* 4. MAZ — small */}
+          {/* 4. LENYMAZ — small */}
           <Link
             href="/projects/maz-musique"
             className="wg-card wg-card--maz wg-card--small wg-animate"
@@ -550,21 +550,19 @@ export default function Works() {
             <div className="wg-card-scene">
               <div className="wg-maz-scene-bg" />
               <MacBook className="wg-macbook--maz">
-                <div className="wg-screen-wip">
-                  <div className="wg-screen-wip-label">En cours de cr&eacute;ation</div>
-                </div>
+                <ScreenMazWebsite />
               </MacBook>
-              <span className="wg-badge wg-badge--brand">Branding</span>
+              <span className="wg-badge wg-badge--web">Site vitrine</span>
             </div>
             <div className="wg-card-info">
               <div>
                 <div>
-                  <span className="wg-card-name" style={{ color: "#e8b080" }}>MAZ</span>
+                  <span className="wg-card-name" style={{ color: "#e8b080" }}>Lenymaz</span>
                   <span className="wg-card-year">2026</span>
                 </div>
                 <div className="wg-card-tags">
+                  <span className="wg-tag">Next.js</span>
                   <span className="wg-tag">Web Design</span>
-                  <span className="wg-tag">Branding</span>
                 </div>
               </div>
               <span className="wg-card-link">
