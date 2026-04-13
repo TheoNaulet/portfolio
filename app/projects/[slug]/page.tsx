@@ -141,6 +141,32 @@ export default function ProjectPage({
               {(() => {
                 const iphoneScreens = project.screens.filter(s => s.type === "iphone" && s.image);
                 const macbookScreens = project.screens.filter(s => s.type === "macbook" && s.image);
+                // Both macbook + iphone: show side by side
+                if (macbookScreens.length > 0 && iphoneScreens.length > 0) {
+                  return (
+                    <div className="relative flex items-end gap-4 md:gap-6 flex-shrink-0">
+                      {/* MacBook */}
+                      <div className="relative w-[220px] md:w-[320px]">
+                        <div className="bg-[#2a2a2e] rounded-t-[10px] p-[6px] border border-black/8 border-b-0">
+                          <div className="rounded-[4px] overflow-hidden">
+                            <img src={assetPath(macbookScreens[0].image!)} alt={macbookScreens[0].label} className="w-full h-auto" />
+                          </div>
+                        </div>
+                        <div className="h-[8px] bg-gradient-to-b from-[#333338] to-[#1e1e22] rounded-b-[4px]" />
+                        <div className="mx-[-3%] h-[6px] bg-gradient-to-b from-[#d1d1d1] to-[#b8b8b8] rounded-b-[6px]" />
+                      </div>
+                      {/* iPhone */}
+                      <div className="relative w-[80px] md:w-[110px] -mb-2">
+                        <div className="bg-[#1a1a1c] rounded-[16px] md:rounded-[24px] p-[3px] md:p-[4px] border border-black/10 shadow-[0_30px_80px_rgba(0,0,0,0.12)]">
+                          <div className="absolute top-[6px] md:top-[10px] left-1/2 -translate-x-1/2 w-[30px] md:w-[45px] h-[8px] md:h-[14px] bg-black rounded-full z-10" />
+                          <div className="rounded-[13px] md:rounded-[20px] overflow-hidden">
+                            <img src={assetPath(iphoneScreens[0].image!)} alt={iphoneScreens[0].label} className="w-full h-auto" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
                 if (iphoneScreens.length >= 2) {
                   return (
                     <div className="relative w-[260px] md:w-[300px] h-[420px] md:h-[500px] flex-shrink-0">
@@ -279,19 +305,19 @@ export default function ProjectPage({
             </h2>
           </motion.div>
 
-          {/* Mobile screens */}
+          {/* Desktop screens */}
           <motion.div
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
-            className="flex flex-wrap justify-center gap-8 md:gap-12 mb-20"
+            className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 mb-20"
           >
             {project.screens
-              .filter((s) => s.type === "iphone")
+              .filter((s) => s.type === "macbook")
               .map((screen) => (
-                <motion.div key={screen.label} variants={fadeInUp}>
-                  <IPhoneMockup
+                <motion.div key={screen.label} variants={scaleIn}>
+                  <MacBookMockup
                     label={screen.label}
                     gradient={screen.gradient}
                     image={screen.image}
@@ -300,19 +326,19 @@ export default function ProjectPage({
               ))}
           </motion.div>
 
-          {/* Desktop screens */}
+          {/* Mobile screens */}
           <motion.div
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 mb-20 md:mb-28"
+            className="flex flex-wrap justify-center gap-8 md:gap-12 mb-20 md:mb-28"
           >
             {project.screens
-              .filter((s) => s.type === "macbook")
+              .filter((s) => s.type === "iphone")
               .map((screen) => (
-                <motion.div key={screen.label} variants={scaleIn}>
-                  <MacBookMockup
+                <motion.div key={screen.label} variants={fadeInUp}>
+                  <IPhoneMockup
                     label={screen.label}
                     gradient={screen.gradient}
                     image={screen.image}
