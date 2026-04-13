@@ -18,7 +18,7 @@ export default function MacBookMockup({
           {/* Camera dot */}
           <div className="absolute top-[3px] left-1/2 -translate-x-1/2 w-[6px] h-[6px] rounded-full bg-[#2a2a2a]" />
           {/* Screen */}
-          <div className={`w-full aspect-[16/9] rounded-[4px] overflow-hidden bg-gradient-to-br ${gradient} flex items-center justify-center relative`}>
+          <div className={`w-full aspect-[16/8.2] rounded-[4px] overflow-hidden bg-gradient-to-br ${gradient} flex items-center justify-center relative`}>
             {image ? (
               <img src={assetPath(image)} alt={label} className="absolute inset-0 w-full h-full object-contain object-top" />
             ) : (
