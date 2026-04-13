@@ -274,7 +274,7 @@ export default function ProjectPage({
             </div>
           </motion.div>
 
-          {project.status === "in-progress" || !project.screens.some(s => s.image) ? (
+          {project.screens.length === 0 ? null : project.status === "in-progress" || !project.screens.some(s => s.image) ? (
             /* En cours de création */
             <motion.div variants={fadeInUp} className="mb-20 md:mb-28">
               <h2

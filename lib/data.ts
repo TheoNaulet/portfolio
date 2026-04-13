@@ -138,12 +138,7 @@ export const projects: Project[] = [
       "Backtest de stratégies sur données historiques",
       "Système de scoring par sport (football, NBA, tennis, rugby, NHL)",
     ],
-    screens: [
-      { type: "macbook", label: "Dashboard", gradient: "from-[#34D399] to-[#6EE7B7]" },
-      { type: "macbook", label: "Value Bets", gradient: "from-[#6EE7B7] to-[#34D399]" },
-      { type: "macbook", label: "Scan", gradient: "from-[#34D399] to-[#A7F3D0]" },
-      { type: "macbook", label: "Backtest", gradient: "from-[#A7F3D0] to-[#34D399]" },
-    ],
+    screens: [],
   },
   {
     name: "H2Air",
