@@ -53,6 +53,20 @@ export default function ProjectsPage() {
 
                     {/* Thumbnail */}
                     {(() => {
+                      if (project.image) {
+                        return (
+                          <div className="flex flex-col items-center gap-2 flex-shrink-0 opacity-70 group-hover:opacity-100 transition-opacity">
+                            <img
+                              src={assetPath(project.image)}
+                              alt={project.name}
+                              className={`w-[72px] h-[72px] rounded-[18px] shadow-md object-cover ${project.slug === "h2air" ? "bg-[#0A1628]" : "bg-white"}`}
+                            />
+                            <span className="font-condensed text-[11px] font-semibold tracking-[0.02em] text-ink2">
+                              {project.name}
+                            </span>
+                          </div>
+                        );
+                      }
                       const macScreen = project.screens.find(s => s.type === "macbook" && s.image);
                       if (macScreen?.image) {
                         return (
@@ -72,20 +86,6 @@ export default function ProjectsPage() {
                                 />
                               </div>
                             </div>
-                          </div>
-                        );
-                      }
-                      if (project.image) {
-                        return (
-                          <div className="flex flex-col items-center gap-2 flex-shrink-0 opacity-70 group-hover:opacity-100 transition-opacity">
-                            <img
-                              src={assetPath(project.image)}
-                              alt={project.name}
-                              className={`w-[72px] h-[72px] rounded-[18px] shadow-md object-cover ${project.slug === "h2air" ? "bg-[#0A1628]" : "bg-white"}`}
-                            />
-                            <span className="font-condensed text-[11px] font-semibold tracking-[0.02em] text-ink2">
-                              {project.name}
-                            </span>
                           </div>
                         );
                       }
