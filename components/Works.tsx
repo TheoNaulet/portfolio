@@ -575,27 +575,38 @@ export default function Works() {
             </div>
           </Link>
 
-          {/* 5. COTEZILLA — small */}
+          {/* 5. KASHA — small */}
           <Link
-            href="/projects/cotezilla"
-            className="wg-card wg-card--cotezilla wg-card--small wg-animate"
+            href="/projects/kasha"
+            className="wg-card wg-card--kasha wg-card--small wg-animate"
             style={{ animationDelay: "0.25s" }}
           >
             <div className="wg-card-scene">
-              <MacBook className="wg-macbook--cotezilla">
-                <ScreenCotezillaDashboard />
+              <MacBook className="wg-macbook--kasha">
+                <img
+                  src={assetPath("/images/kasha/dashboard1.png")}
+                  alt="Kasha Dashboard"
+                  className="wg-screen-img"
+                />
               </MacBook>
-              <span className="wg-badge wg-badge--web">Bot IA</span>
+              <Phone className="wg-phone--kasha" hideNotch>
+                <img
+                  src={assetPath("/images/kasha/IMG_4494.PNG")}
+                  alt="Kasha App"
+                  className="wg-screen-video"
+                />
+              </Phone>
+              <span className="wg-badge wg-badge--app">Cashback</span>
             </div>
             <div className="wg-card-info">
               <div>
                 <div>
-                  <span className="wg-card-name">Cotezilla</span>
+                  <span className="wg-card-name" style={{ color: "#7C3AED" }}>Kasha</span>
                   <span className="wg-card-year">2026</span>
                 </div>
                 <div className="wg-card-tags">
-                  <span className="wg-tag">Paris sportifs</span>
-                  <span className="wg-tag">IA</span>
+                  <span className="wg-tag">React Native</span>
+                  <span className="wg-tag">Next.js</span>
                 </div>
               </div>
               <span className="wg-card-link">

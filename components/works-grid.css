@@ -1302,6 +1302,51 @@
 .wg-card--maz:hover { box-shadow: 0 20px 60px -15px rgba(200,100,50,0.2), 0 0 0 1px rgba(200,100,50,0.1); }
 
 /* ===================== */
+/* KASHA                 */
+/* ===================== */
+.wg-card--kasha .wg-card-scene {
+  background: radial-gradient(ellipse at 50% 60%, #f0eaff 0%, #f8f6ff 70%);
+}
+
+.wg-card--kasha .wg-card-scene::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(124,58,237,0.08) 0%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wg-macbook--kasha {
+  left: 42%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+  z-index: 2;
+}
+
+.wg-card:hover .wg-macbook--kasha {
+  transform: translate(-50%, -50%) scale(0.7) translateY(-8px);
+}
+
+.wg-phone--kasha {
+  position: absolute;
+  right: 8%;
+  bottom: 8%;
+  transform: scale(0.55) rotate(2deg);
+  transform-origin: bottom right;
+  z-index: 3;
+}
+
+.wg-card:hover .wg-phone--kasha {
+  transform: scale(0.55) rotate(2deg) translateY(-6px);
+}
+
+.wg-card--kasha:hover { box-shadow: 0 20px 60px -15px rgba(124,58,237,0.2), 0 0 0 1px rgba(124,58,237,0.1); }
+
+/* ===================== */
 /* ANIMATIONS            */
 /* ===================== */
 @keyframes wg-fadeUp {
