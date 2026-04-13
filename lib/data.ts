@@ -190,6 +190,7 @@ export const projects: Project[] = [
     url: "https://lenymaz.com",
     gradient: "from-[#F59E0B] to-[#FBBF24]",
     titleGradient: "linear-gradient(135deg, #f59e0b, #fbbf24, #d97706)",
+    image: "/images/logo_lenymaz.png",
     tagline: "Site vitrine pour l'artiste Leny MAZ, produit par Amassa Productions.",
     description:
       "Site vitrine pour l'artiste Leny MAZ (Pop Méditerranée), produit par Amassa Productions. Design immersif mettant en valeur l'univers musical, les formules de prestation, les vidéos et les références. Formulaire de contact intégré via Web3Forms, pages SEO dynamiques par ville et type d'événement, et optimisation performance.",
