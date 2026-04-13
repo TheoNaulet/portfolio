@@ -262,30 +262,6 @@ export const projects: Project[] = [
       { type: "iphone", label: "Carte", gradient: "from-[#00C48C] to-[#6C3AED]", image: "/images/kasha/IMG_4499.PNG" },
     ],
   },
-  {
-    name: "Fullboost Guillaume",
-    slug: "fullboost-guillaume",
-    year: "2025",
-    url: "#",
-    gradient: "from-[#EF4444] to-[#F97316]",
-    titleGradient: "linear-gradient(135deg, #ef4444, #f97316, #dc2626)",
-    tagline: "Site vitrine pour un coach sportif / préparateur physique.",
-    description:
-      "Site vitrine pour Fullboost Guillaume, conçu pour présenter les services de coaching sportif et préparation physique. Une interface énergique et professionnelle qui reflète l'intensité du coaching proposé.",
-    role: "Développeur Freelance",
-    duration: "2025",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    features: [
-      "Présentation des programmes et services de coaching",
-      "Design dynamique et sportif",
-      "Optimisation SEO et performance",
-    ],
-    status: "in-progress",
-    screens: [
-      { type: "macbook", label: "Accueil", gradient: "from-[#EF4444] to-[#F97316]" },
-      { type: "iphone", label: "Mobile", gradient: "from-[#F97316] to-[#EF4444]" },
-    ],
-  },
 ];
 
 export interface Company {
