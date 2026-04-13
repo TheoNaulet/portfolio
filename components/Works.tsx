@@ -550,7 +550,11 @@ export default function Works() {
             <div className="wg-card-scene">
               <div className="wg-maz-scene-bg" />
               <MacBook className="wg-macbook--maz">
-                <ScreenMazWebsite />
+                <img
+                  src={assetPath("/images/lenymaz/hero.png")}
+                  alt="Lenymaz website"
+                  className="wg-screen-img"
+                />
               </MacBook>
               <span className="wg-badge wg-badge--web">Site vitrine</span>
             </div>
